@@ -1,10 +1,21 @@
 <div class="container">
     <div class="header-inner">
+        <!-- menu-draw -->
+        <button class="header-menu">
+            <img
+                src="./assets.css/icon/menu-draw.svg"
+                alt=""
+                class="header-menu__icon icon"
+            />
+        </button>
+
         <!-- logo -->
 
-        <div class="logo">
-            <img src="./assets.css/icon/logo.svg" alt="" class="logo-img" />
-            <h2 class="logo-title">grocerymart</h2>
+        <div>
+            <a class="logo" href="./">
+                <img src="./assets.css/icon/logo.svg" alt="" class="logo-img" />
+                <h2 class="logo-title">grocerymart</h2></a
+            >
         </div>
 
         <!-- nav -->
@@ -14,22 +25,78 @@
                 <li>
                     <a href="#!" class="nav-link">
                         Departments
-                        <img src="./assets.css/icon/arow-down.svg" alt="" />
+                        <img
+                            class="nav-arow icon"
+                            src="./assets.css/icon/arow-down.svg"
+                            alt=""
+                        />
                     </a>
                 </li>
                 <li>
                     <a href="#!" class="nav-link">
                         Grocery
-                        <img src="./assets.css/icon/arow-down.svg" alt="" />
+                        <img
+                            class="nav-arow icon"
+                            src="./assets.css/icon/arow-down.svg"
+                            alt=""
+                        />
                     </a>
                 </li>
                 <li>
                     <a href="#!" class="nav-link">
                         Beauty
-                        <img src="./assets.css/icon/arow-down.svg" alt="" />
+                        <img
+                            class="nav-arow icon"
+                            src="./assets.css/icon/arow-down.svg"
+                            alt=""
+                        />
                     </a>
                 </li>
             </ul>
+        </div>
+
+        <!-- header-action -->
+
+        <div class="header-action">
+            <div class="header-action__group">
+                <button class="header-action__btn">
+                    <img
+                        src="./assets.css/icon/search.svg"
+                        alt=""
+                        class="header-action__icon icon"
+                    />
+                </button>
+            </div>
+
+            <div class="header-action__group">
+                <button class="header-action__btn">
+                    <img
+                        src="./assets.css/icon/heart.svg"
+                        alt=""
+                        class="header-icon icon"
+                    />
+                    <span class="header-action__title">03</span>
+                </button>
+
+                <div class="header-action__skeleton"></div>
+
+                <button class="header-action__btn">
+                    <img
+                        src="./assets.css/icon/buy.svg"
+                        alt=""
+                        class="header-icon icon"
+                    />
+                    <span class="header-action__title">$65.42</span>
+                </button>
+            </div>
+
+            <div class="header-action__user">
+                <img
+                    src="../assets.css/avatar/avatar-header.jpg"
+                    alt=""
+                    class="header-action__avatar"
+                />
+            </div>
         </div>
     </div>
 </div>

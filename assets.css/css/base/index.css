@@ -63,6 +63,25 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Gordita", sans-serif;
+  color: var(--text-color);
+  background-color: var(--body-bg-color);
+}
+
+button, input, select, textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  filter: var(--icon-color);
 }
 
 .row > *, .container-fluid, .container {
