@@ -11,5 +11,11 @@
     @include abstracts.breakpoint(sm) {
         --header-bg-color: #FFF;
     }
+
+
+
+    --dropdrow-bg-color: #fff;
+    --dropdrow-text-color: #1A162E;
+    --dropdrow-shawdow-color: rgba(200, 200, 200, 0.4);
     
 }
