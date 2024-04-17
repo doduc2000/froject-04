@@ -16,6 +16,11 @@
     padding: 16px 0;
   }
 }
+@media (max-width: 575.98px) {
+  .header {
+    box-shadow: 0 20 60 10 var(--header-shadow-color);
+  }
+}
 
 .header-menu {
   display: none;

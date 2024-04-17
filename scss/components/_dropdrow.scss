@@ -3,19 +3,21 @@
     position: absolute;
     left: 0;
     padding-top: 54px;
-    max-width: 1240px;
+    width: min(1240px, 100%);
     // visibility: hidden;
     // opacity: 0;
-    transition: 0.5 ease-in-out;
 
     &-inner{
+        --inner-padding: 30px;
+        --inner-max-height: min(582px, 100vh - 158px);
+
+
         position: relative;
-        padding: 30px;
+        padding: var(--inner-padding);
         border-radius: 20px;
         background-color: var(--dropdrow-bg-color);
-        color: var(--dropdrow-text-color);
         box-shadow: 0 40 90 20 var( --dropdrow-shawdow-color);
-        height: min(582px, 100vh - 158px);
+        max-height: var(--inner-max-height);
         &::before {
             content: url("../icon/dropdrow-arrow.svg");
             position: absolute;
@@ -24,5 +26,71 @@
             transform: translate(-50%);
             filter: var(--dropdrow-arrow-color);
         }
+    }
+
+    &-menu{
+        max-height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
+
+        &__main{
+            overflow-y: auto;
+            max-height: inherit;
+            width: 292px;
+            border-right: 1px solid var(--dropdrow-menu-main-border-color);
+        }
+    }
+}
+
+.menu-column{
+
+    display: flex;
+    column-gap: 14px;
+
+    &__icon-box{
+        position: relative;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+
+        & .menu-column__icon:first-child{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+
+        & .menu-column__icon:last-child{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+            filter: var(--icon-color);
+        }
+    }
+
+
+    &__content{
+        flex-grow: 1;
+    }
+
+    &__heading{
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: var(--text-color);
+        margin-bottom: 19px;
+        margin-top: 10px;
+    }
+
+    &__link{
+        display: block;
+        font-size: 1.4rem;
+        color:var( --text-color) ;
+        padding: 7px 0;
+    }
+
+    &__link:hover{
+        color: #0071DC;
+        font-weight: 500;
+
     }
 }

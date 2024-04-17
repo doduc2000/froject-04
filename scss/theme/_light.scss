@@ -10,6 +10,7 @@
     --body-bg-color: #F6F6F6;
     @include abstracts.breakpoint(sm) {
         --header-bg-color: #FFF;
+        --header-shadow-color:rgba(237, 237, 246, 0.2);
     }
 
 
@@ -17,5 +18,8 @@
     --dropdrow-bg-color: #fff;
     --dropdrow-text-color: #1A162E;
     --dropdrow-shawdow-color: rgba(200, 200, 200, 0.4);
+
+
+    --dropdrow-menu-main-border-color: #D2D1D6;
     
 }

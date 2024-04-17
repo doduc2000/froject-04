@@ -10,6 +10,12 @@ html.dark {
   --dropdrow-text-color: #B9BABE;
   --dropdrow-shawdow-color: rgba(23, 28, 40, 0.4);
   --dropdrow-arrow-color: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(688%) hue-rotate(184deg) brightness(98%) contrast(92%);
+  --dropdrow-menu-main-border-color: #171C28;
+}
+@media (max-width: 575.98px) {
+  html.dark {
+    --header-shadow-color:rgba(0, 0, 0, 0.2);
+  }
 }
 
 :root {
@@ -23,10 +29,12 @@ html.dark {
   --dropdrow-bg-color: #fff;
   --dropdrow-text-color: #1A162E;
   --dropdrow-shawdow-color: rgba(200, 200, 200, 0.4);
+  --dropdrow-menu-main-border-color: #D2D1D6;
 }
 @media (max-width: 575.98px) {
   :root {
     --header-bg-color: #FFF;
+    --header-shadow-color:rgba(237, 237, 246, 0.2);
   }
 }
 

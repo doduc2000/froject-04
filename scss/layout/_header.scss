@@ -20,6 +20,10 @@
             padding: 16px 0;
         }
     }
+
+    @include abstracts.breakpoint(sm){
+        box-shadow: 0 20 60 10 var(--header-shadow-color);
+    }
 }
 
 
