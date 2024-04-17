@@ -33,6 +33,7 @@
 .dropdrow-inner {
   --inner-padding: 30px;
   --inner-max-height: min(582px, 100vh - 158px);
+  --inner-width-column: 292px;
   position: relative;
   padding: var(--inner-padding);
   border-radius: 20px;
@@ -49,12 +50,12 @@
   filter: var(--dropdrow-arrow-color);
 }
 .dropdrow-menu {
-  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+  position: relative;
 }
 .dropdrow-menu__main {
   overflow-y: auto;
-  max-height: inherit;
-  width: 292px;
+  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+  width: var(--inner-width-column);
   border-right: 1px solid var(--dropdrow-menu-main-border-color);
 }
 
@@ -62,16 +63,24 @@
   display: flex;
   column-gap: 14px;
 }
+.menu-column + .menu-column {
+  margin-top: calc(var(--inner-padding) - 15px);
+}
 .menu-column__icon-box {
   position: relative;
   width: 36px;
   height: 36px;
   flex-shrink: 0;
 }
+@media (max-width: 1199.98px) {
+  .menu-column__icon-box {
+    display: none;
+  }
+}
 .menu-column__icon-box .menu-column__icon:first-child {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .menu-column__icon-box .menu-column__icon:last-child {
   position: absolute;
@@ -79,18 +88,26 @@
   bottom: 0;
   width: 24px;
   height: 24px;
-  object-fit: cover;
+  object-fit: contain;
   filter: var(--icon-color);
 }
 .menu-column__content {
   flex-grow: 1;
 }
-.menu-column__heading {
+.menu-column__heading a {
+  display: block;
   font-weight: 500;
   font-size: 1.6rem;
   color: var(--text-color);
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   margin-top: 10px;
+}
+.menu-column__items--active .sub-menu {
+  display: grid;
+}
+.menu-column__items--active > .menu-column__link, .menu-column__items:hover > .menu-column__link {
+  color: #0071DC;
+  font-weight: 500;
 }
 .menu-column__link {
   display: block;
@@ -98,9 +115,15 @@
   color: var(--text-color);
   padding: 7px 0;
 }
-.menu-column__link:hover {
-  color: #0071DC;
-  font-weight: 500;
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 var(--inner-width-column);
+  padding-left: var(--inner-padding);
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-y: auto;
+  column-gap: var(--inner-padding);
 }
 
 /*# sourceMappingURL=index.css.map */
