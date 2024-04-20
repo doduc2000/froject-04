@@ -6,9 +6,8 @@
     left: 0;
     padding-top: 54px;
     width: min(1240px, 100%);
-    // visibility: hidden;
-    // opacity: 0;
-
+    visibility: hidden;
+    opacity: 0;
     
     &-inner{
         --inner-padding: 30px;
@@ -125,5 +124,18 @@
     overflow-y: auto ;
     column-gap: var(--inner-padding);
 
+    &--not-main{
+        position: initial;
+        inset: initial;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 30px;
+         max-height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
 
+        & .sub-menu__column{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
 }
