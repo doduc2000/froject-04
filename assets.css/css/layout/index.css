@@ -1,4 +1,4 @@
-.header-action__btn, .header-action__group, .header-action, .nav-list, .header-inner {
+.nav-list, .header-action__btn, .header-action__group, .header-action, .header-inner {
   display: flex;
   align-items: center;
 }
@@ -21,37 +21,6 @@
     box-shadow: 0 20 60 10 var(--header-shadow-color);
   }
 }
-
-.header-menu {
-  display: none;
-}
-@media (max-width: 991.98px) {
-  .header-menu {
-    display: block;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .nav {
-    display: none;
-  }
-}
-.nav-items:hover .dropdrow {
-  visibility: visible;
-  opacity: 1;
-}
-.nav-link {
-  display: flex;
-  padding: 25px 15px;
-  column-gap: 6px;
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-.nav-arow {
-  margin-top: 4px;
-}
-
 .header-action {
   column-gap: 20px;
 }
@@ -100,6 +69,93 @@
   width: 1px;
   height: 30px;
   background-color: var(--header-action-group-skeleton-bg);
+}
+
+.header-menu {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .header-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav {
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+    inset: 0 50% 0 0;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+  }
+}
+.nav-close__btn {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .nav-close__btn {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 20px 0 0 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+  }
+}
+.nav-items:hover .dropdrow {
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 991.98px) {
+  .nav-items:hover .dropdrow {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .nav-items {
+    width: 100%;
+  }
+}
+.nav-link {
+  display: flex;
+  padding: 25px 15px;
+  column-gap: 6px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+@media (max-width: 991.98px) {
+  .nav-link {
+    justify-content: space-between;
+  }
+}
+.nav-arow {
+  margin-top: 4px;
+}
+
+.overlay {
+  transition: all 0.5s;
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input-check:checked ~ .nav {
+  transform: translateX(0);
+}
+
+.input-check:checked ~ .overlay {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */

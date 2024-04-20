@@ -24,50 +24,7 @@
     @include abstracts.breakpoint(sm){
         box-shadow: 0 20 60 10 var(--header-shadow-color);
     }
-}
 
-
-.header-menu{
-    display: none;
-
-    @include abstracts.breakpoint(lg) {
-        display: block;
-    }
-}
-
-.nav{
-
-    @include abstracts.breakpoint(lg){
-        display: none
-    }
-
-    &-list{
-        @extend %flexItemCenter;
-    }
-
-    &-items{
-        &:hover .dropdrow{
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-
-    &-link{
-        display: flex;
-        padding: 25px 15px;
-        column-gap: 6px;
-        color: var(--text-color);
-        font-weight: 500;
-        font-size: 1.5rem; 
-    }
-
-    &-arow{
-        margin-top: 4px;
-    }
-}
-
-
-.header{
     &-action{
         @extend %flexItemCenter;
         column-gap: 20px;
@@ -130,3 +87,99 @@
         }
     }
 }
+
+
+.header-menu{
+    display: none;
+
+    @include abstracts.breakpoint(lg) {
+        display: block;
+    }
+}
+
+.nav{
+
+    @include abstracts.breakpoint(lg){
+            position: fixed;
+            z-index: 9;
+            background-color: #fff;
+            inset: 0 50% 0 0;
+            transform: translateX(-100%);
+            transition: all 0.5s;
+    }
+
+    &-close__btn{
+        display: none;
+
+        @include abstracts.breakpoint(lg){
+            display: block;
+            width: 25px;
+            height: 25px;
+            margin: 20px 0 0 20px;
+        }
+    }
+
+    &-list{
+        @extend %flexItemCenter;
+
+        @include abstracts.breakpoint(lg){
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 40px;
+        }
+    }
+
+    &-items{
+        &:hover .dropdrow{
+            visibility: visible;
+            opacity: 1;
+
+            @include abstracts.breakpoint(lg){
+                display: none;
+            }
+        }
+
+        @include abstracts.breakpoint(lg){
+            width: 100%;
+        }
+    }
+
+    &-link{
+        display: flex;
+        padding: 25px 15px;
+        column-gap: 6px;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 1.5rem; 
+
+        @include abstracts.breakpoint(lg){
+            justify-content: space-between;
+        }
+    }
+
+    &-arow{
+        margin-top: 4px;
+    }
+}
+
+
+.overlay{
+    transition: all 0.5s;
+    position: fixed;
+    inset: 0;
+    z-index: 8;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.input-check:checked ~ .nav{
+    transform: translateX(0);
+}
+
+.input-check:checked ~ .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+

@@ -16,13 +16,14 @@ body{
 }
 
 
-button, input, select, textarea{
+button, input, select, textarea, a{
     border: none; 
     outline: none;
     background-color: transparent;
     font-size: inherit;
     color: inherit;
     font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
