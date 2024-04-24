@@ -126,17 +126,14 @@
             flex-direction: column;
             align-items: flex-start;
             padding: 20px 40px;
+            height: calc(100% - 48px);
+            overflow: auto;
         }
     }
 
     &-items{
         &:hover .dropdrow{
-            visibility: visible;
-            opacity: 1;
-
-            @include abstracts.breakpoint(lg){
-                display: none;
-            }
+           display: block;
         }
 
         @include abstracts.breakpoint(lg){

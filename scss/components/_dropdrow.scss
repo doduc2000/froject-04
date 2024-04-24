@@ -6,13 +6,26 @@
     left: 0;
     padding-top: 54px;
     width: min(1240px, 100%);
-    visibility: hidden;
-    opacity: 0;
+    display: none;
+
+    @include abstracts.breakpoint(lg){
+        display: block;
+        position: initial;
+        padding-top: 0;
+    }
+
     
     &-inner{
         --inner-padding: 30px;
         --inner-max-height: min(582px, 100vh - 158px);
         --inner-width-column: 292px;
+
+        @include abstracts.breakpoint(lg){
+            padding: 0 15px;
+            border-radius: 0;
+            background-color: transparent;
+            box-shadow: none;
+        }
 
 
         position: relative;
@@ -28,20 +41,31 @@
             left: var(--arrow-left-pos);
             transform: translate(-50%);
             filter: var(--dropdrow-arrow-color);
+
+            @include abstracts.breakpoint(lg){
+                display: none;
+            }
         }
     }
 
     &-menu{
         position: relative;
+        max-height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
     }
 
 
 
     &-menu__main{
             overflow-y: auto;
-            max-height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
+            height: inherit;
             width: var(--inner-width-column);
             border-right: 1px solid var(--dropdrow-menu-main-border-color);
+
+            @include abstracts.breakpoint(lg){
+                width: 100%;
+                border-right: none;
+                height: auto;
+            }
         }
 }
 
@@ -60,17 +84,23 @@
         height: 36px;
         flex-shrink: 0;
 
-        @include abstracts.breakpoint(xl){
-            display: none;
+        &-hidden-on-tab{
+            @include abstracts.breakpoint(lg){
+                display: block;
+            }
         }
 
-        & .menu-column__icon:first-child{
+    }
+
+    &__icon{
+
+        &:first-child{
             width: 30px;
             height: 30px;
             object-fit: contain;
         }
 
-        & .menu-column__icon:last-child{
+        &:last-child{
             position: absolute;
             right: 0;
             bottom: 0;
@@ -79,7 +109,30 @@
             object-fit: contain;
             filter: var(--icon-color);
         }
+        
+        @include abstracts.breakpoint(xl){
+        display: none;
+        }
+
+        @include abstracts.breakpoint(lg){
+        display: block;
+        }
     }
+
+    &__icon-box{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    &-hidden-on-tab{
+        @include abstracts.breakpoint(lg){
+            display: none;
+        }
+    }
+
+    }
+
 
 
     &__content{
@@ -106,6 +159,12 @@
         font-weight: 500;
     }
 
+    &__items--active > .menu-column__link{
+        @include abstracts.breakpoint(lg){
+            margin-bottom: 19px;
+        }
+    }
+
     &__link{
         display: block;
         font-size: 1.4rem;
@@ -123,6 +182,12 @@
     grid-template-columns: repeat(3, 1fr);
     overflow-y: auto ;
     column-gap: var(--inner-padding);
+
+    @include abstracts.breakpoint(lg){
+        position: initial;
+        padding-left: 0;
+        grid-template-columns: 1fr;
+    }
 
     &--not-main{
         position: initial;
