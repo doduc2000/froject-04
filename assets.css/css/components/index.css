@@ -33,7 +33,6 @@
 }
 @media (max-width: 991.98px) {
   .dropdrow {
-    display: block;
     position: initial;
     padding-top: 0;
   }
@@ -55,6 +54,7 @@
     border-radius: 0;
     background-color: transparent;
     box-shadow: none;
+    max-height: inherit;
   }
 }
 .dropdrow-inner::before {
@@ -72,7 +72,6 @@
 }
 .dropdrow-menu {
   position: relative;
-  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
 }
 .dropdrow-menu__main {
   overflow-y: auto;
@@ -193,7 +192,13 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
-  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+  height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+}
+@media (max-width: 991.98px) {
+  .sub-menu--not-main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 }
 .sub-menu--not-main .sub-menu__column {
   display: flex;

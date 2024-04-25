@@ -9,7 +9,6 @@
     display: none;
 
     @include abstracts.breakpoint(lg){
-        display: block;
         position: initial;
         padding-top: 0;
     }
@@ -25,6 +24,7 @@
             border-radius: 0;
             background-color: transparent;
             box-shadow: none;
+            max-height: inherit;
         }
 
 
@@ -50,7 +50,6 @@
 
     &-menu{
         position: relative;
-        max-height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
     }
 
 
@@ -195,7 +194,12 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         row-gap: 30px;
-         max-height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
+        height: calc(var(--inner-max-height) - (var(--inner-padding) * 2));
+
+         @include abstracts.breakpoint(lg){
+            grid-template-columns: 1fr;
+            height: auto;
+         }
 
         & .sub-menu__column{
             display: flex;

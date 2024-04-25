@@ -138,6 +138,14 @@
 
         @include abstracts.breakpoint(lg){
             width: 100%;
+
+            &--active .dropdrow{
+                display: block !important;
+             }
+        
+            &:hover .dropdrow{
+                display: none;
+             }
         }
     }
 
@@ -156,6 +164,15 @@
 
     &-arow{
         margin-top: 4px;
+
+        @include abstracts.breakpoint(lg){
+            rotate: -90deg;
+            transition: rotate 0.3s;
+        }
+    }
+
+    &-items--active &-arow{
+        rotate: 0deg;
     }
 }
 

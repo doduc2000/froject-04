@@ -1380,6 +1380,12 @@ html.dark {
   .nav-items {
     width: 100%;
   }
+  .nav-items--active .dropdrow {
+    display: block !important;
+  }
+  .nav-items:hover .dropdrow {
+    display: none;
+  }
 }
 .nav-link {
   display: flex;
@@ -1396,6 +1402,15 @@ html.dark {
 }
 .nav-arow {
   margin-top: 4px;
+}
+@media (max-width: 991.98px) {
+  .nav-arow {
+    rotate: -90deg;
+    transition: rotate 0.3s;
+  }
+}
+.nav-items--active .nav-arow {
+  rotate: 0deg;
 }
 
 .overlay {
@@ -1452,7 +1467,6 @@ html.dark {
 }
 @media (max-width: 991.98px) {
   .dropdrow {
-    display: block;
     position: initial;
     padding-top: 0;
   }
@@ -1474,6 +1488,7 @@ html.dark {
     border-radius: 0;
     background-color: transparent;
     box-shadow: none;
+    max-height: inherit;
   }
 }
 .dropdrow-inner::before {
@@ -1491,7 +1506,6 @@ html.dark {
 }
 .dropdrow-menu {
   position: relative;
-  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
 }
 .dropdrow-menu__main {
   overflow-y: auto;
@@ -1612,7 +1626,13 @@ html.dark {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
-  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+  height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+}
+@media (max-width: 991.98px) {
+  .sub-menu--not-main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 }
 .sub-menu--not-main .sub-menu__column {
   display: flex;
