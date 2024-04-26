@@ -102,20 +102,48 @@
     @include abstracts.breakpoint(lg){
             position: fixed;
             z-index: 9;
-            background-color: #fff;
+            background-color: var(--nav-bg-color);
             inset: 0 50% 0 0;
             transform: translateX(-100%);
             transition: all 0.5s;
+            border-radius: 0px 20px 20px 0px;
+           
+    }
+
+    @include abstracts.breakpoint(sm){
+        inset: 0 20% 0 0;
     }
 
     &-close__btn{
         display: none;
+        filter: var(--nav-btn-icon-color);
 
         @include abstracts.breakpoint(lg){
             display: block;
             width: 25px;
             height: 25px;
-            margin: 20px 0 0 20px;
+            margin: 20px 0 20px 20px;
+        }
+    }
+
+    &-btn{
+        height: 44px;
+        padding: 0 20px;
+        align-items: center;
+
+        &__title, &__qnt{
+            margin-left: 16px;
+            font-weight: 500; 
+            font-size: 1.5rem;
+            color: var(--nav-text-color);     
+        }
+
+        &__qnt{
+            margin-left: auto
+        }
+
+        &__icon{
+            filter: var(--nav-btn-icon-color);
         }
     }
 
@@ -128,6 +156,12 @@
             padding: 20px 40px;
             height: calc(100% - 48px);
             overflow: auto;
+            overscroll-behavior: contain;
+        }
+
+        @include abstracts.breakpoint(sm){
+            padding: 0;
+            height: calc(100% - 155px);
         }
     }
 
@@ -153,12 +187,16 @@
         display: flex;
         padding: 25px 15px;
         column-gap: 6px;
-        color: var(--text-color);
+        color: var(--nav-text-color);
         font-weight: 500;
         font-size: 1.5rem; 
 
         @include abstracts.breakpoint(lg){
             justify-content: space-between;
+        }
+
+        @include abstracts.breakpoint(sm){
+            padding: 15px 20px;
         }
     }
 
@@ -190,6 +228,7 @@
 
 .input-check:checked ~ .nav{
     transform: translateX(0);
+    box-shadow: 0 40 90 20 var(--nav-shawdow-color);
 }
 
 .input-check:checked ~ .overlay{

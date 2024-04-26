@@ -1,6 +1,8 @@
 @use "../abstracts";
 
 :root{
+
+
     --text-color: #1A162E;
     --icon-color: brightness(0) saturate(100%) invert(7%) sepia(18%) saturate(3413%) hue-rotate(220deg) brightness(97%) contrast(94%);
     --header-bg-color: #EEEEEE;
@@ -14,12 +16,18 @@
     }
 
 
-
+// dropdrow
     --dropdrow-bg-color: #fff;
     --dropdrow-text-color: #1A162E;
     --dropdrow-shawdow-color: rgba(200, 200, 200, 0.4);
-
-
     --dropdrow-menu-main-border-color: #D2D1D6;
+
+
+// nav
+    --nav-shawdow-color: rgba(200, 200, 200, 0.4);
+    --nav-bg-color: #fff;
+    --nav-text-color: #1A162E;
+    --nav-btn-icon-color: brightness(0) saturate(100%) invert(6%) sepia(29%) saturate(3345%) hue-rotate(229deg) brightness(91%) contrast(92%);
+
     
 }

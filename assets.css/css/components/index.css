@@ -57,6 +57,11 @@
     max-height: inherit;
   }
 }
+@media (max-width: 1199.98px) {
+  .dropdrow-inner {
+    padding: 0 20px;
+  }
+}
 .dropdrow-inner::before {
   content: url("../icon/dropdrow-arrow.svg");
   position: absolute;
@@ -166,7 +171,7 @@
 .menu-column__link {
   display: block;
   font-size: 1.4rem;
-  color: var(--text-color);
+  color: var(--nav-text-color);
   padding: 7px 0;
 }
 
