@@ -9,7 +9,7 @@ html.dark {
         --header-action-group-shadow-bg: #EDEDF633;
         --header-action-group-skeleton-bg: #EDEDF6;
         --body-bg-color: #292E39;
-        @include abstracts.breakpoint(sm) {
+        @include abstracts.screen(sm) {
                 --header-shadow-color:rgba(0, 0, 0, 0.2);
             }
 
@@ -27,4 +27,11 @@ html.dark {
         --nav-bg-color:#292E39;
         --nav-text-color: #B9BABE;
         --nav-btn-icon-color: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(3473%) hue-rotate(93deg) brightness(106%) contrast(95%);
+
+
+// cate
+
+        --cate-item-bg-color: #171C28;
+        --cate-img-bg-color: #292E39;
+        --cate-title-color: #fff;
 }

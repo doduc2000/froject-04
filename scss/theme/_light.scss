@@ -10,7 +10,7 @@
     --header-action-group-skeleton-bg: #EDEDF6;
     --header-action-group-shadow-bg: #EDEDF633;
     --body-bg-color: #F6F6F6;
-    @include abstracts.breakpoint(sm) {
+    @include abstracts.screen(sm) {
         --header-bg-color: #FFF;
         --header-shadow-color:rgba(237, 237, 246, 0.2);
     }
@@ -29,5 +29,16 @@
     --nav-text-color: #1A162E;
     --nav-btn-icon-color: brightness(0) saturate(100%) invert(6%) sepia(29%) saturate(3345%) hue-rotate(229deg) brightness(91%) contrast(92%);
 
+
+
+// cate
+
+    --cate-item-bg-color: #EEEEEE;
+    --cate-img-bg-color: #fff;
+    --cate-title-color: #000;
+
+    @include abstracts.screen(md){
+        --cate-item-bg-color: #fff;
+    }
     
 }

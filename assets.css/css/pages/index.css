@@ -1,0 +1,29 @@
+.home-inner {
+  margin-top: 40px;
+}
+.home-heading {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+  .home-heading {
+    font-size: 2.2rem;
+  }
+}
+.home-cate {
+  --grid-gutter-x: 51px;
+}
+@media (max-width: 1199.98px) {
+  .home-cate {
+    --grid-gutter-x: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .home-cate {
+    --grid-gutter-y: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

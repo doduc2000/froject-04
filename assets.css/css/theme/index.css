@@ -15,6 +15,9 @@ html.dark {
   --nav-bg-color:#292E39;
   --nav-text-color: #B9BABE;
   --nav-btn-icon-color: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(3473%) hue-rotate(93deg) brightness(106%) contrast(95%);
+  --cate-item-bg-color: #171C28;
+  --cate-img-bg-color: #292E39;
+  --cate-title-color: #fff;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -38,11 +41,19 @@ html.dark {
   --nav-bg-color: #fff;
   --nav-text-color: #1A162E;
   --nav-btn-icon-color: brightness(0) saturate(100%) invert(6%) sepia(29%) saturate(3345%) hue-rotate(229deg) brightness(91%) contrast(92%);
+  --cate-item-bg-color: #EEEEEE;
+  --cate-img-bg-color: #fff;
+  --cate-title-color: #000;
 }
 @media (max-width: 575.98px) {
   :root {
     --header-bg-color: #FFF;
     --header-shadow-color:rgba(237, 237, 246, 0.2);
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    --cate-item-bg-color: #fff;
   }
 }
 
