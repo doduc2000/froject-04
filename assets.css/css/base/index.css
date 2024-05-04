@@ -77,12 +77,23 @@ button, input, select, textarea, a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
 
 .icon {
   filter: var(--icon-color);
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 .row > *, .container-fluid, .container {

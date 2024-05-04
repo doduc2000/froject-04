@@ -45,7 +45,7 @@
   padding: var(--inner-padding);
   border-radius: 20px;
   background-color: var(--dropdrow-bg-color);
-  box-shadow: 0 40 90 20 var(--dropdrow-shawdow-color);
+  box-shadow: 0px 40px 90px 20px var(--dropdrow-shawdow-color);
   max-height: var(--inner-max-height);
 }
 @media (max-width: 991.98px) {
@@ -361,6 +361,98 @@
   .cate-desc {
     font-size: 1.4rem;
   }
+}
+
+.home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  gap: 18px;
+  background-color: var(--filter-btn-bg-color);
+  height: 36px;
+  padding: 0 11px;
+}
+
+.like__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--like-btn-bg-color);
+  box-shadow: 0px 20px 60px 6px var(--like-btn-shadow-color);
+}
+.like__btn-like .like__btn-icon {
+  display: none;
+}
+.like__btn:not(.like__btn-like) .like__btn-icon-red {
+  display: none;
+}
+.like__btn-icon-red {
+  margin-top: 6px;
+}
+
+.product-item {
+  background-color: var(--filter-btn-bg-color);
+  border-radius: 20px;
+  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  padding: 16px;
+  height: 100%;
+}
+.product-item:hover .product-img {
+  transform: scale(1.1);
+}
+.product-item__content {
+  margin-top: 16px;
+  margin-left: 5px;
+}
+.product-item__heading {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--product-item-heading-color);
+  line-height: 1.5;
+}
+.product-item__client {
+  font-size: 1.5rem;
+  color: #9E9DA8;
+  margin-top: 16px;
+}
+.product-item__row {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.product-item__rating, .product-item__price {
+  font-size: 1.6rem;
+  color: var(--product-item-heading-color);
+  font-weight: 500;
+}
+.product-item__price {
+  margin-right: auto;
+}
+.product-item__start {
+  margin-right: 6px;
+}
+.product-img__wrap {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.product-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+.product-like__btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

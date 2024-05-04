@@ -40,5 +40,11 @@
     @include abstracts.screen(md){
         --cate-item-bg-color: #fff;
     }
-    
+
+// product
+    --filter-btn-bg-color: #FFFFFF;
+    --like-btn-bg-color: #FFFFFF;
+    --like-btn-shadow-color: rgba(124, 124, 124, 0.2);
+    --product-item-heading-color: #1A162E;
 }
+    

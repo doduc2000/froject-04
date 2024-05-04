@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -26,6 +28,10 @@ button, input, select, textarea, a{
     -webkit-tap-highlight-color: transparent;
 }
 
+button{
+    cursor: pointer;
+}
+
 
 a{
   text-decoration: none;
@@ -33,4 +39,12 @@ a{
 
 .icon{
     filter: var(--icon-color);
+}
+
+.container {
+    @include abstracts.screen(sm){
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
 }

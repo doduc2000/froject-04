@@ -10,7 +10,6 @@
         font-weight: 700;
         font-size: 2.4rem;
         color: var(--text-color);
-        margin-bottom: 20px;
 
         @include abstracts.screen(md){
             font-size: 2.2rem;
@@ -27,5 +26,12 @@
         @include abstracts.screen(md){
             --grid-gutter-y: 20px;
         }
+    }
+
+    &-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
     }
 }

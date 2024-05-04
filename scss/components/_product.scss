@@ -1,0 +1,78 @@
+@use "../abstracts";
+
+.product{
+    &-item{
+        background-color: var( --filter-btn-bg-color);
+        border-radius: 20px;
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        padding: 16px;
+        height: 100%;
+
+        &:hover .product-img{
+            transform: scale(1.1);
+        }
+
+        &__content{
+            margin-top: 16px;
+            margin-left: 5px;
+        }
+
+        &__heading{
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--product-item-heading-color);
+            line-height: 1.5;
+        }
+
+        &__client{
+            font-size: 1.5rem;
+            color: #9E9DA8;
+            margin-top: 16px;
+        }
+
+        &__row{
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        &__rating{
+            font-size: 1.6rem;
+            color:var(--product-item-heading-color);
+            font-weight: 500;
+        }
+
+        &__price{
+           @extend .product-item__rating;
+            margin-right: auto;
+        }
+
+        &__start{
+            margin-right: 6px;
+        }
+    }
+
+    &-img__wrap{
+        position: relative;
+        padding-top: 100%;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    &-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: contain;
+        transition: all 0.3s;
+    }
+
+    &-like__btn{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+    }
+}
