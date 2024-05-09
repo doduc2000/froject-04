@@ -134,13 +134,13 @@
                         <div class="home-row">
                             <h2 class="home-heading">Total LavAzza 1320</h2>
                             <div class="filter-wrap">
-                                <button class="home-btn">
+                                <button class="home-btn js-toggle" toggle-target="#filter">
                                     Filter
                                     <img src="./assets.css/icon/home-filter.svg" alt="" class="home-btn__img icon" />
                                 </button>
 
                                 <!-- filter-form -->
-                                <div class="filter">
+                                <div class="filter hide" id="filter">
                                     <img
                                         src="./assets.css/img/filter/filter-arown-up.png"
                                         alt=""
@@ -251,7 +251,9 @@
 
                                     <!-- filter-footer -->
                                     <div class="filter-footer">
-                                        <button class="btn btn-text filter-btn-text">Cancel</button>
+                                        <button class="btn btn-text filter-btn-text js-toggle" toggle-target="#filter">
+                                            Cancel
+                                        </button>
                                         <button class="btn btn-primary filter-btn">Show Result</button>
                                     </div>
                                 </div>
