@@ -35,3 +35,37 @@
         margin-top: 6px;
     }
 }
+
+
+// btn
+
+.btn{
+    background-color: #F8F8FB;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: background-color, color;
+    transition-duration: 0.3s;
+
+    &-text{
+        background-color: transparent;
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    }
+
+    &-primary{
+        background-color: #FFB700;
+        border: 1px solid #FFB700;
+        
+
+        &:hover{
+           background-color: #FFF;
+           color: black;
+        }
+    }
+}

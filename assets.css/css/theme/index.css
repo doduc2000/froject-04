@@ -22,6 +22,11 @@ html.dark {
   --like-btn-bg-color: #292E39;
   --like-btn-shadow-color: rgba(124, 124, 124, 0.2);
   --product-item-heading-color: #FFFFFF;
+  --filter-bg-color: #292E39;
+  --filter-shadow-color: rgba(0, 0, 0, 0.4);
+  --filter-text-color: #fff;
+  --filter-bg-btn-tag-color: #171C28;
+  --filter-arown-color: brightness(0) saturate(100%) invert(13%) sepia(12%) saturate(1226%) hue-rotate(183deg) brightness(91%) contrast(85%);
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -52,6 +57,11 @@ html.dark {
   --like-btn-bg-color: #FFFFFF;
   --like-btn-shadow-color: rgba(124, 124, 124, 0.2);
   --product-item-heading-color: #1A162E;
+  --filter-bg-color: #fff;
+  --filter-shadow-color: rgba(200, 200, 200, 0.4);
+  --filter-text-color: #1A162E;
+  --filter-bg-btn-tag-color: #F8F8FB;
+  --filter-arown-color: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(107%) contrast(106%);
 }
 @media (max-width: 575.98px) {
   :root {

@@ -133,10 +133,129 @@
                     <div class="container">
                         <div class="home-row">
                             <h2 class="home-heading">Total LavAzza 1320</h2>
-                            <button class="home-btn">
-                                Filter
-                                <img src="./assets.css/icon/home-filter.svg" alt="" class="home-btn__img icon" />
-                            </button>
+                            <div class="filter-wrap">
+                                <button class="home-btn">
+                                    Filter
+                                    <img src="./assets.css/icon/home-filter.svg" alt="" class="home-btn__img icon" />
+                                </button>
+
+                                <!-- filter-form -->
+                                <div class="filter">
+                                    <img
+                                        src="./assets.css/img/filter/filter-arown-up.png"
+                                        alt=""
+                                        class="filter-arown"
+                                    />
+                                    <h3 class="filter-heading">Filter</h3>
+
+                                    <form action="" class="filter-form">
+                                        <!-- filter-column-1 -->
+                                        <div class="filter-form__column">
+                                            <div class="filter-form__column-group">
+                                                <h3 class="filter-form__column-heading">Price</h3>
+                                            </div>
+
+                                            <div class="filter-form__column-group">
+                                                <div
+                                                    class="filter-form__scrollBar"
+                                                    style="--min-value: 10%; --max-value: 60%"
+                                                ></div>
+                                            </div>
+
+                                            <div class="filter-form__column-group filter-form__column-group-input">
+                                                <div class="">
+                                                    <label for="" class="filter-form__lable">Minimum</label>
+                                                    <input type="text" class="filter-form__input" value="$30.00" />
+                                                </div>
+
+                                                <div class="">
+                                                    <label for="" class="filter-form__lable">Maximum</label>
+                                                    <input type="text" class="filter-form__input" value="$100.00" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-form__separate"></div>
+
+                                        <!-- filter-column-2 -->
+                                        <div class="filter-column">
+                                            <div class="filter-form__column-group">
+                                                <h3 class="filter-form__column-heading">Size/Weight</h3>
+                                            </div>
+
+                                            <div class="filter-form__column-group">
+                                                <div class="filter-form__select-wrap">
+                                                    <div class="filter-form__select" style="--width: 158px">
+                                                        <span class="filter-form__lable">500g</span>
+                                                        <img
+                                                            src="./assets.css/icon/filter-arown-up.svg"
+                                                            alt=""
+                                                            class="filter-form__select-arown icon"
+                                                        />
+                                                    </div>
+                                                    <div class="filter-form__select">
+                                                        <span class="filter-form__lable">Gram</span>
+                                                        <img
+                                                            src="./assets.css/icon/filter-arown-up.svg"
+                                                            alt=""
+                                                            class="filter-form__select-arown icon"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter-form__column-group">
+                                                <div class="filter-form__column-tags">
+                                                    <button class="filter-form__column-tag">Small</button>
+                                                    <button class="filter-form__column-tag">Medium</button>
+                                                    <button class="filter-form__column-tag">Large</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-form__separate"></div>
+
+                                        <!-- filter-column-3 -->
+                                        <div class="filter-column">
+                                            <div class="filter-form__column-group">
+                                                <h3 class="filter-form__column-heading">Brand</h3>
+                                            </div>
+
+                                            <div class="filter-form__column-group">
+                                                <div class="filter-form__column-search-wrap">
+                                                    <input
+                                                        name=""
+                                                        id=""
+                                                        type="text"
+                                                        class="filter-form__input-search"
+                                                        placeholder="Search brand name"
+                                                    />
+
+                                                    <img
+                                                        src="./assets.css/icon/filter-icon-search.svg"
+                                                        alt=""
+                                                        class="filter-form__column-icon-search icon"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div class="filter-form__column-group">
+                                                <div class="filter-form__column-tags">
+                                                    <button class="filter-form__column-tag">Lavazza</button>
+                                                    <button class="filter-form__column-tag">Nescafe</button>
+                                                    <button class="filter-form__column-tag">Starbucks</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <!-- filter-footer -->
+                                    <div class="filter-footer">
+                                        <button class="btn btn-text filter-btn-text">Cancel</button>
+                                        <button class="btn btn-primary filter-btn">Show Result</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- 
