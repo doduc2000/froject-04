@@ -40,6 +40,7 @@
 // btn
 
 .btn{
+    display: flex;
     background-color: #F8F8FB;
     height: 32px;
     display: flex;
@@ -59,6 +60,8 @@
     }
 
     &-primary{
+        height: 40px;
+        min-width: 80px;
         background-color: #FFB700;
         border: 1px solid #FFB700;
         

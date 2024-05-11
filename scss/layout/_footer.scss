@@ -39,6 +39,10 @@
     &-desc{
         width: 100%;
         margin-bottom:40px ;
+
+        @include abstracts.screen(lg){
+            margin-bottom: 15px;
+        }
     }
 
     &-form{
@@ -71,11 +75,12 @@
 
         @include abstracts.screen(sm){
             width: 100%;
+            font-size: 1.6rem;
         }
     }
 
     &-btn{
-        height: 40px !important;
+        height: 38px !important;
         width: 80px;
 
         @include abstracts.screen(xl){
@@ -91,6 +96,10 @@
         font-weight: 800;
         font-size: 1.8rem;
         margin-bottom: 30px;
+
+        @include abstracts.screen(lg){
+            margin-bottom: 15px;
+        }
     }
 
     &-item{

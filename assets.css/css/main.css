@@ -1559,6 +1559,11 @@ html.dark {
   width: 100%;
   margin-bottom: 40px;
 }
+@media (max-width: 991.98px) {
+  .footer-desc {
+    margin-bottom: 15px;
+  }
+}
 .footer-form {
   padding: 16px 0;
   display: flex;
@@ -1591,10 +1596,11 @@ html.dark {
 @media (max-width: 575.98px) {
   .footer-input {
     width: 100%;
+    font-size: 1.6rem;
   }
 }
 .footer-btn {
-  height: 40px !important;
+  height: 38px !important;
   width: 80px;
 }
 @media (max-width: 1199.98px) {
@@ -1611,6 +1617,11 @@ html.dark {
   font-weight: 800;
   font-size: 1.8rem;
   margin-bottom: 30px;
+}
+@media (max-width: 991.98px) {
+  .footer-heading {
+    margin-bottom: 15px;
+  }
 }
 .footer-item {
   display: block;
@@ -2073,6 +2084,7 @@ html.dark {
 }
 
 .btn {
+  display: flex;
   background-color: #F8F8FB;
   height: 32px;
   display: flex;
@@ -2090,6 +2102,8 @@ html.dark {
   text-underline-offset: 3px;
 }
 .btn-primary {
+  height: 40px;
+  min-width: 80px;
   background-color: #FFB700;
   border: 1px solid #FFB700;
 }
