@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,5 +23,86 @@
         <!-- scripts -->
         <script src="./assets.css/js/scripts.js"></script>
     </head>
-    <body></body>
+    <body>
+        <main class="auth">
+            <!-- auth-left -->
+            <div class="auth-left">
+                <!-- logo -->
+                <div>
+                    <a class="logo auth-left__logo" href="./index.html">
+                        <img src="./assets.css/icon/logo.svg" alt="" class="logo-img" />
+                        <h2 class="logo-title">grocerymart</h2></a
+                    >
+                </div>
+
+                <img src="./assets.css/img/auth/auth-1.png" alt="" class="auth-left__img" />
+                <p class="auth-left__desc">
+                    The best of luxury brand values, high quality products, and innovative services
+                </p>
+
+                <button class="auth-left__action-icon js-toggle" toggle-target="#auth-right">
+                    <img src="./assets.css/icon/auth-action-icon.svg" alt="" />
+                </button>
+            </div>
+
+            <!-- auth-right -->
+
+            <div id="auth-right" class="auth-right hide">
+                <div class="auth-right__inner">
+                    <!-- logo -->
+                    <div>
+                        <a class="logo" href="./index.html">
+                            <img src="./assets.css/icon/logo.svg" alt="" class="logo-img" />
+                            <h2 class="logo-title">grocerymart</h2></a
+                        >
+                    </div>
+
+                    <h1 class="auth-right__heading">Hello Again!</h1>
+                    <p class="auth-right__desc">
+                        Welcome back to sign in. As a returning customer, you have access to your previously saved all
+                        information.
+                    </p>
+
+                    <form action="" class="form auth-form">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email" name="" id="" />
+                            <img src="./assets.css/icon/mail.svg" alt="" class="form-img" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-input" placeholder="Password" name="" id="" />
+                            <img src="./assets.css/icon/lock.svg" alt="" class="form-img" />
+                        </div>
+
+                        <div class="form-group form-group__inline">
+                            <label>
+                                <input type="checkbox" class="form-input__check" />
+                                <span class="form-input__check-text">Set as default card</span>
+                            </label>
+
+                            <a href="#!" class="auth-right__link">Recovery Password</a>
+                        </div>
+
+                        <div class="form-group">
+                            <a href="./index.html" class="btn btn-primary form-btn auth-btn">Sign Up</a>
+
+                            <a href="./index.html" class="btn btn-outline form-btn">
+                                <img src="./assets.css/icon/auth-icon.svg" alt="" class="form-btn__icon icon" />
+                                Sign in with Gmail
+                            </a>
+                        </div>
+                    </form>
+
+                    <div class="auth-right__footer">
+                        <p class="auth-right__footer-desc">You have an account yet?</p>
+                        <a href="./sign-up.html" class="auth-right__footer-link">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
+    </body>
 </html>

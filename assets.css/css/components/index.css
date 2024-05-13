@@ -726,6 +726,11 @@
   position: relative;
   margin-bottom: 30px;
 }
+@media (max-width: 575.98px) {
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
 .form-group__inline {
   display: flex;
   align-items: center;
@@ -736,6 +741,11 @@
   flex-direction: column;
   gap: 30px;
   margin-top: 50px;
+}
+@media (max-width: 575.98px) {
+  .form-group:last-child {
+    gap: 20px;
+  }
 }
 .form-input {
   width: 100%;

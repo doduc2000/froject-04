@@ -2438,6 +2438,11 @@ html.dark {
   position: relative;
   margin-bottom: 30px;
 }
+@media (max-width: 575.98px) {
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
 .form-group__inline {
   display: flex;
   align-items: center;
@@ -2448,6 +2453,11 @@ html.dark {
   flex-direction: column;
   gap: 30px;
   margin-top: 50px;
+}
+@media (max-width: 575.98px) {
+  .form-group:last-child {
+    gap: 20px;
+  }
 }
 .form-input {
   width: 100%;
@@ -2606,6 +2616,11 @@ html.dark {
   max-width: 460px;
   text-align: center;
   margin-bottom: 60px;
+}
+@media (max-width: 767.98px) {
+  .auth-right__desc {
+    margin-bottom: 30px;
+  }
 }
 .auth-right__link, .auth-right__footer-link {
   color: #0071DC;

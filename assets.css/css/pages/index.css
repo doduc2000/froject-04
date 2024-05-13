@@ -133,6 +133,11 @@
   text-align: center;
   margin-bottom: 60px;
 }
+@media (max-width: 767.98px) {
+  .auth-right__desc {
+    margin-bottom: 30px;
+  }
+}
 .auth-right__link, .auth-right__footer-link {
   color: #0071DC;
 }
