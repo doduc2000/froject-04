@@ -34,4 +34,130 @@
   margin-bottom: 20px;
 }
 
+.auth {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+}
+@media (max-width: 767.98px) {
+  .auth {
+    grid-template-columns: 1fr;
+  }
+}
+.auth-left, .auth-right {
+  padding: 0 30px;
+}
+.auth-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: var(--auth-left-bg-color);
+}
+.auth-left__logo, .auth-left__action-icon {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 767.98px) {
+  .auth-left__logo, .auth-left__action-icon {
+    display: flex;
+  }
+}
+.auth-left__logo {
+  top: 80px;
+}
+.auth-left__action-icon {
+  bottom: 60px;
+}
+.auth-left__desc {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  max-width: 412px;
+  text-align: center;
+  color: var(--auth-text-color);
+}
+@media (max-width: 991.98px) {
+  .auth-left__img {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .auth-left__img {
+    width: initial;
+  }
+}
+.auth-btn {
+  color: #1A162E;
+}
+.auth-right {
+  background-color: var(--auth-right-bg-color);
+}
+@media (max-width: 767.98px) {
+  .auth-right {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    transition: transform 0.5s;
+  }
+  .auth-right.hide {
+    transform: translateX(100%);
+  }
+}
+.auth-right__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.auth-right__heading {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: var(--auth-text-color);
+  margin: 50px 0 10px 0;
+}
+.auth-right__desc, .auth-right .form-input__check-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #9E9DA8;
+}
+.auth-right__desc {
+  max-width: 460px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.auth-right__link, .auth-right__footer-link {
+  color: #0071DC;
+}
+.auth-right__link:hover, .auth-right__footer-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.auth-right__link {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.auth-right__footer {
+  margin-top: 108px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.auth-right__footer-desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #9E9DA8;
+}
+.auth-right__footer-link {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=index.css.map */

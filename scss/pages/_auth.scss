@@ -1,0 +1,146 @@
+@use "../abstracts";
+
+.auth{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+
+    @include abstracts.screen(md){
+        grid-template-columns: 1fr;
+    }
+
+    &-left, &-right{
+        padding: 0 30px;
+    }
+
+    &-left{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        background-color: var(--auth-left-bg-color);
+
+        &__logo, &__action-icon{
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+           
+            @include abstracts.screen(md){
+                display: flex;
+            }
+        }
+
+        &__logo{
+            top: 80px;
+        }
+
+        &__action-icon{
+           bottom: 60px;
+           
+        }
+
+        &__desc{
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            max-width: 412px;
+            text-align: center;
+            color: var(--auth-text-color);
+        }
+
+        &__img{
+            @include abstracts.screen(lg){
+                width: 100%;
+            }
+
+            @include abstracts.screen(md){
+                width: initial;
+            }
+        }
+    }
+
+    &-btn{
+        color: #1A162E;
+    }
+
+    &-right{
+     background-color: var(--auth-right-bg-color);
+
+
+    @include abstracts.screen(md){
+        &.hide{
+            transform: translateX(100%);
+        }
+
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        transition: transform 0.5s;
+    }
+        &__inner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+        }
+
+        &__heading{
+            font-weight: 500;
+            font-size: 3rem;
+            line-height: 1.5;
+            color: var(--auth-text-color);
+            margin: 50px 0 10px 0;
+        }
+
+        &__desc, .form-input__check-text {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #9E9DA8;
+        }
+
+        &__desc{
+            max-width: 460px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        &__link, &__footer-link{
+            color: #0071DC;
+
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+        }
+
+        &__link{
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        &__footer{
+            margin-top: 108px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &-desc{
+                font-weight: 400;
+                font-size: 1.8rem;
+                color: #9E9DA8;
+            }
+
+            &-link{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

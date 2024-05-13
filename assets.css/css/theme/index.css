@@ -27,6 +27,9 @@ html.dark {
   --filter-text-color: #fff;
   --filter-bg-btn-tag-color: #171C28;
   --filter-arown-color: brightness(0) saturate(100%) invert(13%) sepia(12%) saturate(1226%) hue-rotate(183deg) brightness(91%) contrast(85%);
+  --auth-right-bg-color: #292E39;
+  --auth-text-color: #B9BABE;
+  --auth-left-bg-color: #000;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -62,6 +65,8 @@ html.dark {
   --filter-text-color: #1A162E;
   --filter-bg-btn-tag-color: #F8F8FB;
   --filter-arown-color: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(107%) contrast(106%);
+  --auth-right-bg-color: #FFFFFF;
+  --auth-text-color: #1A162E;
 }
 @media (max-width: 575.98px) {
   :root {

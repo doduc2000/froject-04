@@ -71,4 +71,15 @@
            color: black;
         }
     }
+
+    &-outline{
+        border: 1px solid #D2D1D6;
+        border-radius: 10px;
+        background-color: transparent;
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    }
 }

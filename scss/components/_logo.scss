@@ -13,15 +13,7 @@
         font-weight: 700;
         font-size: 2.2rem;
         color: var(--text-color);
-
-        @include abstracts.screen(lg){
-            font-size: 1.8rem;
-        }
     }
 
-    &-img{
-        @include abstracts.screen(lg){
-            width: 24px;
-        }
-    }
+    
 }

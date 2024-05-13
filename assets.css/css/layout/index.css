@@ -6,6 +6,21 @@
 .header {
   background-color: var(--header-bg-color);
 }
+@media (max-width: 991.98px) {
+  .header-logo {
+    column-gap: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-logo-title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-logo-img {
+    width: 24px;
+  }
+}
 .header-inner {
   position: relative;
   z-index: 1;
@@ -70,6 +85,9 @@
   width: 1px;
   height: 30px;
   background-color: var(--header-action-group-skeleton-bg);
+}
+.header-btn__none-md {
+  display: none !important;
 }
 
 .header-menu {

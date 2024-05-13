@@ -10,6 +10,24 @@
 .header{
     background-color: var(--header-bg-color);
 
+    &-logo{
+        @include abstracts.screen(lg){
+            column-gap: 10px;
+        }
+
+        &-title{
+            @include abstracts.screen(lg){
+                font-size: 1.8rem;
+            }
+        }
+
+        &-img{
+            @include abstracts.screen(lg){
+                width: 24px;
+            }
+        }
+    }
+
     &-inner{
         @extend %flexItemCenter;
         position: relative;
@@ -29,6 +47,8 @@
     &-action{
         @extend %flexItemCenter;
         column-gap: 20px;
+
+        
 
         &__group{
             @extend %flexItemCenter;
@@ -85,6 +105,13 @@
             width: 1px;
             height: 30px;
             background-color: var( --header-action-group-skeleton-bg);
+        }
+    }
+
+    &-btn{
+       
+        &__none-md{
+            display: none !important;
         }
     }
 }
