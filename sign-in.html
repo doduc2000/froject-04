@@ -26,7 +26,7 @@
     <body>
         <main class="auth">
             <!-- auth-left -->
-            <div class="auth-left">
+            <div class="auth-left auth-left__sign-in">
                 <!-- logo -->
                 <div>
                     <a class="logo auth-left__logo" href="./index.html">
@@ -40,14 +40,14 @@
                     The best of luxury brand values, high quality products, and innovative services
                 </p>
 
-                <button class="auth-left__action-icon js-toggle" toggle-target="#auth-right">
+                <button class="auth-left__action-icon">
                     <img src="./assets.css/icon/auth-action-icon.svg" alt="" />
                 </button>
             </div>
 
             <!-- auth-right -->
 
-            <div id="auth-right" class="auth-right hide">
+            <div class="auth-right">
                 <div class="auth-right__inner">
                     <!-- logo -->
                     <div>
@@ -65,12 +65,26 @@
 
                     <form action="" class="form auth-form">
                         <div class="form-group">
-                            <input type="email" class="form-input" placeholder="Email" name="" id="" />
+                            <input
+                                type="email"
+                                class="form-input"
+                                placeholder="Email"
+                                name=""
+                                id=""
+                                value="admin@gmail.com"
+                            />
                             <img src="./assets.css/icon/mail.svg" alt="" class="form-img" />
                         </div>
 
                         <div class="form-group">
-                            <input type="password" class="form-input" placeholder="Password" name="" id="" />
+                            <input
+                                type="password"
+                                class="form-input"
+                                placeholder="Password"
+                                name=""
+                                id=""
+                                value="111111"
+                            />
                             <img src="./assets.css/icon/lock.svg" alt="" class="form-img" />
                         </div>
 
@@ -80,11 +94,11 @@
                                 <span class="form-input__check-text">Set as default card</span>
                             </label>
 
-                            <a href="#!" class="auth-right__link">Recovery Password</a>
+                            <a href="./reset-password.html" class="auth-right__link">Forgot Password</a>
                         </div>
 
                         <div class="form-group">
-                            <a href="./index.html" class="btn btn-primary form-btn auth-btn">Sign Up</a>
+                            <a href="./index.html" class="btn btn-primary form-btn auth-btn">Login</a>
 
                             <a href="./index.html" class="btn btn-outline form-btn">
                                 <img src="./assets.css/icon/auth-icon.svg" alt="" class="form-btn__icon icon" />

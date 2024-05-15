@@ -9,6 +9,8 @@
 
 .header{
     background-color: var(--header-bg-color);
+    position: relative;
+    z-index: 2;
 
     &-logo{
         @include abstracts.screen(lg){
@@ -111,7 +113,9 @@
     &-btn{
        
         &__none-md{
-            display: none !important;
+            @include abstracts.screen(md){
+                display: none !important;
+            }
         }
     }
 }
