@@ -30,6 +30,13 @@ html.dark {
   --auth-right-bg-color: #292E39;
   --auth-text-color: #B9BABE;
   --auth-left-bg-color: #000;
+  --product-bg-color: transparent;
+  --product-breadcrumbs-bg-color: #171C28;
+  --product-breadcrumbs-shadow-color: rgba(23, 28, 40, 0.2);
+  --breadcrumbs-item-color: #fff;
+  --footer-bg-color:#171C28;
+  --footer-bg-heading: #fff;
+  --footer-item-color: #eee;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -67,6 +74,13 @@ html.dark {
   --filter-arown-color: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(107%) contrast(106%);
   --auth-right-bg-color: #FFFFFF;
   --auth-text-color: #1A162E;
+  --product-bg-color: #fff;
+  --product-breadcrumbs-bg-color: #F6F6F6;
+  --product-breadcrumbs-shadow-color: rgba(237, 237, 246, 0.2);
+  --breadcrumbs-item-color: #1A162E;
+  --footer-bg-color:#eee;
+  --footer-bg-heading: #1a162e;
+  --footer-item-color: #eee;
 }
 @media (max-width: 575.98px) {
   :root {

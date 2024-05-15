@@ -1,0 +1,8 @@
+.product{
+
+    &-main{
+        background-color: var(--product-bg-color);
+        display: flex;
+        flex-direction: column;
+    }
+}

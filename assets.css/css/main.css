@@ -1269,6 +1269,13 @@ html.dark {
   --auth-right-bg-color: #292E39;
   --auth-text-color: #B9BABE;
   --auth-left-bg-color: #000;
+  --product-bg-color: transparent;
+  --product-breadcrumbs-bg-color: #171C28;
+  --product-breadcrumbs-shadow-color: rgba(23, 28, 40, 0.2);
+  --breadcrumbs-item-color: #fff;
+  --footer-bg-color:#171C28;
+  --footer-bg-heading: #fff;
+  --footer-item-color: #eee;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -1306,6 +1313,13 @@ html.dark {
   --filter-arown-color: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(107%) contrast(106%);
   --auth-right-bg-color: #FFFFFF;
   --auth-text-color: #1A162E;
+  --product-bg-color: #fff;
+  --product-breadcrumbs-bg-color: #F6F6F6;
+  --product-breadcrumbs-shadow-color: rgba(237, 237, 246, 0.2);
+  --breadcrumbs-item-color: #1A162E;
+  --footer-bg-color:#eee;
+  --footer-bg-heading: #1a162e;
+  --footer-item-color: #eee;
 }
 @media (max-width: 575.98px) {
   :root {
@@ -1551,13 +1565,13 @@ html.dark {
 }
 
 .footer {
-  background-color: #eee;
+  background-color: var(--footer-bg-color);
 }
 .footer-inner {
   padding: 50px 0;
 }
 .footer-heading, .footer-desc, .footer-item, .footer-contact__desc, .footer-footer__desc {
-  color: #1a162e;
+  color: var(--footer-bg-heading);
 }
 .footer-content {
   display: grid;
@@ -1653,6 +1667,7 @@ html.dark {
 .footer-item {
   display: block;
   padding: 8px 0;
+  color: var(--footer-item-color);
 }
 .footer-item:hover {
   color: #0071dc;
@@ -2492,6 +2507,41 @@ html.dark {
   margin-right: 10px;
 }
 
+.breadcrumbs {
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--product-breadcrumbs-bg-color);
+  box-shadow: 0 20px 60px 10px var(--product-breadcrumbs-shadow-color);
+}
+@media (max-width: 767.98px) {
+  .breadcrumbs {
+    column-gap: 16px;
+  }
+}
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #9E9DA8;
+}
+@media (max-width: 767.98px) {
+  .breadcrumbs-item {
+    font-size: 1.4rem;
+  }
+}
+.breadcrumbs-item__active {
+  color: var(--breadcrumbs-item-color);
+}
+
 .home {
   margin-bottom: 50px;
 }
@@ -2676,6 +2726,12 @@ html.dark {
 .auth-right__footer-link {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.product-main {
+  background-color: var(--product-bg-color);
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

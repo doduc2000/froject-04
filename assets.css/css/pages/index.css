@@ -184,4 +184,10 @@
   font-weight: 500;
 }
 
+.product-main {
+  background-color: var(--product-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=index.css.map */
