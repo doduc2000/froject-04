@@ -68,6 +68,16 @@
     --product-breadcrumbs-bg-color: #F6F6F6;
     --product-breadcrumbs-shadow-color: rgba(237, 237, 246, 0.2);
     --breadcrumbs-item-color: #1A162E;
+    --product-right-bg-color:#F6F6F6;
+    --product-thumbs-border-color: #9E9DA8;
+    --product-filter-btn-bg-color:#EDEDF6;
+
+    @include abstracts.screen(lg){
+        --product-bg-color: #FAFAFD;
+        --product-breadcrumbs-bg-color: #FFF;
+        --product-right-bg-color:#FFF;
+        --product-left-bg-color: #FFF;
+    }
 
 
 
@@ -75,7 +85,7 @@
 
     --footer-bg-color:#eee;
     --footer-bg-heading: #1a162e;
-    --footer-item-color: #eee;
+    --footer-item-color: #1A162E;
 
     
 }

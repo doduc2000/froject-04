@@ -1,0 +1,24 @@
+.search-bar {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--product-breadcrumbs-bg-color);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.search-bar__input {
+  padding-left: 15px;
+  height: 100%;
+  flex: 1;
+}
+.search-bar__input::placeholder {
+  font-size: 1.4rem;
+  color: #9E9DA8;
+}
+.search-bar__button {
+  padding: 0 15px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=search-bar.css.map */
