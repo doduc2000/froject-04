@@ -4232,12 +4232,96 @@
 
                 <div class="header-action__skeleton"></div>
 
-                <button class="header-action__btn">
-                    <img src="./assets.css/icon/buy.svg" alt="" class="header-icon icon" />
-                    <span class="header-action__title">$65.42</span>
-
+                <div class="">
+                    <button class="header-action__btn js-toggle" toggle-target="#act-dropdown">
+                        <img src="./assets.css/icon/buy.svg" alt="" class="header-icon icon" />
+                        <span class="header-action__title">$65.42</span>
+                    </button>
                     <!-- act-dropdown -->
-                </button>
+                    <div id="act-dropdown" class="act-dropdown">
+                        <div class="act-dropdown__inner">
+                            <img src="../assets.css/icon/dropdrow-arrow.svg" alt="" class="act-dropdown__arrow" />
+                            <div class="act-dropdown__top">
+                                <h2 class="act-dropdown__title">You have 3 item</h2>
+                                <a href="#!" class="act-dropdown__see-all">See All</a>
+                            </div>
+
+                            <div class="row row-cols-3 act-dropdown__between">
+                                <div class="col">
+                                    <article class="act-dropdown__item">
+                                        <figure class="act-dropdown__thumb-wrap">
+                                            <img
+                                                src="./assets.css/img/product/image - UIHUT (1).png"
+                                                alt=""
+                                                class="act-dropdown__thumb"
+                                            />
+                                        </figure>
+                                        <div class="act-dropdown__item-footer">
+                                            <p class="act-dropdown__item-name">Lavazza Coffee Blends</p>
+                                            <p class="act-dropdown__item-price">$329.00</p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="col">
+                                    <article class="act-dropdown__item">
+                                        <figure class="act-dropdown__thumb-wrap">
+                                            <img
+                                                src="./assets.css/img/product/image - UIHUT (3).png"
+                                                alt=""
+                                                class="act-dropdown__thumb"
+                                            />
+                                        </figure>
+                                        <div class="act-dropdown__item-footer">
+                                            <p class="act-dropdown__item-name">Coffee Beans Espresso</p>
+                                            <p class="act-dropdown__item-price">$39.99</p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="col">
+                                    <article class="act-dropdown__item">
+                                        <figure class="act-dropdown__thumb-wrap">
+                                            <img
+                                                src="../assets.css/img/product/image - UIHUT.png"
+                                                alt=""
+                                                class="act-dropdown__thumb"
+                                            />
+                                        </figure>
+                                        <div class="act-dropdown__item-footer">
+                                            <p class="act-dropdown__item-name">Qualità Oro Mountain</p>
+                                            <p class="act-dropdown__item-price">$47.00</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="act-dropdown__bottom">
+                                <div class="act-dropdown__row">
+                                    <span class="act-dropdown__lable">Subtotal:</span>
+                                    <span class="act-dropdown__value">$415.99</span>
+                                </div>
+
+                                <div class="act-dropdown__row">
+                                    <span class="act-dropdown__lable">Texes:</span>
+                                    <span class="act-dropdown__value">Free</span>
+                                </div>
+                                <div class="act-dropdown__row">
+                                    <span class="act-dropdown__lable">Shipping</span>
+                                    <span class="act-dropdown__value">$10.00</span>
+                                </div>
+                                <div class="act-dropdown__row">
+                                    <span class="act-dropdown__lable-strong">Total Price</span>
+                                    <span class="act-dropdown__value-strong">$425.99</span>
+                                </div>
+                            </div>
+
+                            <div class="act-dropdown__footer">
+                                <a href="#!" class="btn btn-primary act-dropdown__footer-btn">Check Out All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="header-action__user">
