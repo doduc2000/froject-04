@@ -54,6 +54,7 @@ table {
 
 *, ::after, ::before {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -74,7 +75,6 @@ button, input, select, textarea, a {
   font-size: inherit;
   color: inherit;
   font-family: inherit;
-  -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -95,6 +95,18 @@ a {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+}
+
+i, em {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+u {
+  text-decoration: underline;
 }
 
 .row > *, .container-fluid, .container {

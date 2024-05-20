@@ -87,6 +87,14 @@
     --footer-bg-heading: #1a162e;
     --footer-item-color: #1A162E;
 
+// review
+
+    --review-bg-color: #FAFAFD;
+
+    @include abstracts.screen(lg){
+        --review-bg-color: #fff;
+    }
+
     
 }
     

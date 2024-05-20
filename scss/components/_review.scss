@@ -1,0 +1,80 @@
+@use "../abstracts";
+
+.reviews{
+   
+
+    &-item{
+        background-color: var(--review-bg-color);
+        border-radius: 16px;
+        padding: 30px;
+        height: 100%;
+
+        @include abstracts.screen(lg){
+            background-color: var(--review-bg-color);
+        }
+
+        &__top{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @include abstracts.screen(xl){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            @include abstracts.screen(sm){
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        &__desc, &__name, &__review{
+            color: var(--breadcrumbs-item-color);
+        }
+
+        &__name{
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        &__desc{
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+
+        &__avatar{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            @include abstracts.screen(xl){
+                flex-direction: column-reverse;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            @include abstracts.screen(sm){
+                flex-direction: row;
+                align-items: center;
+                gap: 0;
+            }
+        }
+
+        &__review{
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 1.5;
+        }
+    }
+}

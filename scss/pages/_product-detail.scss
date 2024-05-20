@@ -239,4 +239,49 @@
             width: 100%;
         }
     }
+
+    &-footer{
+        &__list{
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 30px;
+
+            @include abstracts.screen(sm){
+                gap: 20px;
+            }
+        }
+
+        &__item{
+            font-weight: 500;
+            font-size: 2.2rem;
+            color: #9E9DA8;
+            cursor: pointer;
+            user-select: none;
+
+            @include abstracts.screen(sm){
+                font-size: 1.4rem;
+            }
+
+            &-active{
+                color: var(--breadcrumbs-item-color);
+            }
+        }
+    }
+
+    &-tab{
+        display: none;
+
+        &-active{
+            display: block;
+        }
+
+        &__heading{
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 1.6;
+            color: var(--breadcrumbs-item-color);
+            margin-bottom: 30px;
+        }
+    }
 }
