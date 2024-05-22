@@ -239,6 +239,16 @@
   box-shadow: 0 40px 90px 20px var(--atc-dropdown-shadow-color);
   transition: all 0.5s;
 }
+.act-dropdown__favorite {
+  top: 71px;
+  right: -180px;
+}
+.act-dropdown__separate {
+  margin: 30px 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--atc-dropdown-border-bottom-color);
+}
 .act-dropdown.hide {
   opacity: 0;
   visibility: hidden;
@@ -253,6 +263,9 @@
   top: -15px;
   right: 100px;
   filter: var(--filter-arown-color);
+}
+.act-dropdown__arrow-favorite {
+  right: 200px;
 }
 .act-dropdown__top {
   display: flex;

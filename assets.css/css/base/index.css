@@ -79,6 +79,7 @@ button, input, select, textarea, a {
 
 button {
   user-select: none;
+  cursor: pointer;
 }
 
 a {

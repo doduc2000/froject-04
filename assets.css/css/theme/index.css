@@ -44,6 +44,9 @@ html.dark {
   --atc-dropdown-bg-color: #292E39;
   --atc-dropdown-shadow-color:rgba(23, 28, 40, 0.4);
   --atc-dropdown-border-bottom-color: #171C28;
+  --checkout-breadcrumb-bg-color: #171C28;
+  --checkout-breadcrumb-shadow-color: rgba(23, 28, 40, 0.2);
+  --checkout-text-color: #B9BABE;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -101,6 +104,9 @@ html.dark {
   --atc-dropdown-bg-color: #fff;
   --atc-dropdown-shadow-color: rgba(200, 200, 200, 0.4);
   --atc-dropdown-border-bottom-color: #D2D1D6;
+  --checkout-breadcrumb-bg-color: #fff;
+  --checkout-breadcrumb-shadow-color: rgba(237, 237, 246, 0.2);
+  --checkout-text-color: #1A162E;
 }
 @media (max-width: 575.98px) {
   :root {

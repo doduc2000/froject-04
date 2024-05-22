@@ -26,7 +26,7 @@
                 <img src="./assets.css/icon/close-nav-btn.svg" alt="" class="nav-close__btn" />
             </label>
 
-            <a href="#!" class="nav-btn d-none d-sm-flex">
+            <a href="./checkout.html" class="nav-btn d-none d-sm-flex">
                 <img src="./assets.css/icon/buy.svg" alt="" class="nav-btn__icon" />
                 <p class="nav-btn__title">Card</p>
                 <p class="nav-btn__qnt">3</p>
@@ -4225,10 +4225,83 @@
             </div>
 
             <div class="header-action__group">
-                <button class="header-action__btn">
-                    <img src="./assets.css/icon/heart.svg" alt="" class="header-icon icon" />
-                    <span class="header-action__title">03</span>
-                </button>
+                <div class="">
+                    <button class="header-action__btn js-toggle" toggle-target="#act-dropdown__favorite">
+                        <img src="./assets.css/icon/heart.svg" alt="" class="header-icon icon" />
+                        <span class="header-action__title">03</span>
+
+                        <!-- act-dropdown -->
+                        <div id="act-dropdown__favorite" class="act-dropdown act-dropdown__favorite hide">
+                            <div class="act-dropdown__inner">
+                                <img
+                                    src="../assets.css/icon/dropdrow-arrow.svg"
+                                    alt=""
+                                    class="act-dropdown__arrow act-dropdown__arrow-favorite"
+                                />
+                                <div class="act-dropdown__top">
+                                    <h2 class="act-dropdown__title">You have 3 item(s)</h2>
+                                    <a href="#!" class="act-dropdown__see-all">See All</a>
+                                </div>
+
+                                <div class="row row-cols-3 act-dropdown__between">
+                                    <div class="col">
+                                        <article class="act-dropdown__item">
+                                            <figure class="act-dropdown__thumb-wrap">
+                                                <img
+                                                    src="./assets.css/img/product/image - UIHUT (1).png"
+                                                    alt=""
+                                                    class="act-dropdown__thumb"
+                                                />
+                                            </figure>
+                                            <div class="act-dropdown__item-footer">
+                                                <p class="act-dropdown__item-name">Lavazza Coffee Blends</p>
+                                                <p class="act-dropdown__item-price">$329.00</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="act-dropdown__item">
+                                            <figure class="act-dropdown__thumb-wrap">
+                                                <img
+                                                    src="./assets.css/img/product/image - UIHUT (3).png"
+                                                    alt=""
+                                                    class="act-dropdown__thumb"
+                                                />
+                                            </figure>
+                                            <div class="act-dropdown__item-footer">
+                                                <p class="act-dropdown__item-name">Coffee Beans Espresso</p>
+                                                <p class="act-dropdown__item-price">$39.99</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col">
+                                        <article class="act-dropdown__item">
+                                            <figure class="act-dropdown__thumb-wrap">
+                                                <img
+                                                    src="../assets.css/img/product/image - UIHUT.png"
+                                                    alt=""
+                                                    class="act-dropdown__thumb"
+                                                />
+                                            </figure>
+                                            <div class="act-dropdown__item-footer">
+                                                <p class="act-dropdown__item-name">Qualità Oro Mountain</p>
+                                                <p class="act-dropdown__item-price">$47.00</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="act-dropdown__separate"></div>
+
+                                <div class="act-dropdown__footer">
+                                    <a href="#!" class="btn btn-primary act-dropdown__footer-btn">Check Out All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
 
                 <div class="header-action__skeleton"></div>
 
@@ -4238,12 +4311,12 @@
                         <span class="header-action__title">$65.42</span>
                     </button>
                     <!-- act-dropdown -->
-                    <div id="act-dropdown" class="act-dropdown">
+                    <div id="act-dropdown" class="act-dropdown hide">
                         <div class="act-dropdown__inner">
                             <img src="../assets.css/icon/dropdrow-arrow.svg" alt="" class="act-dropdown__arrow" />
                             <div class="act-dropdown__top">
-                                <h2 class="act-dropdown__title">You have 3 item</h2>
-                                <a href="#!" class="act-dropdown__see-all">See All</a>
+                                <h2 class="act-dropdown__title">You have 3 item(s)</h2>
+                                <a href="./checkout.html" class="act-dropdown__see-all">See All</a>
                             </div>
 
                             <div class="row row-cols-3 act-dropdown__between">
@@ -4317,7 +4390,9 @@
                             </div>
 
                             <div class="act-dropdown__footer">
-                                <a href="#!" class="btn btn-primary act-dropdown__footer-btn">Check Out All</a>
+                                <a href="./checkout.html" class="btn btn-primary act-dropdown__footer-btn"
+                                    >Check Out All</a
+                                >
                             </div>
                         </div>
                     </div>
