@@ -1357,6 +1357,7 @@ html.dark {
   --atc-dropdown-border-bottom-color: #D2D1D6;
   --checkout-breadcrumb-bg-color: #fff;
   --checkout-breadcrumb-shadow-color: rgba(237, 237, 246, 0.2);
+  --checkout-text-color: #1A162E;
 }
 @media (max-width: 575.98px) {
   :root {
