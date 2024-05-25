@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Check-out | Grocerymart</title>
+        <title>Shipping | Grocerymart</title>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="76x76" href="./assets.css/favicon/apple-touch-icon.png" />
@@ -50,7 +50,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="breadcrumbs-item breadcrumbs-item__active">Checkout</a>
+                            <a href="#!" class="breadcrumbs-item"
+                                >Checkout
+                                <img src="./assets.css/icon/arow-right.svg" alt="" class="beradcrumbs-icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs-item breadcrumbs-item__active">Shipping</a>
                         </li>
                     </ul>
                 </div>
@@ -59,6 +65,101 @@
                     <div class="row">
                         <div class="col-8 col-xxl-12">
                             <div class="checkout-info">
+                                <h1 class="checkout-info__heading">
+                                    1. Shipping, arrives between Mon, May 16—Tue, May 24
+                                </h1>
+                                <div class="checkout-info__separate"></div>
+                                <div class="address">
+                                    <div class="address-top">
+                                        <div class="address-top__left">
+                                            <p class="address-top__title">Shipping address</p>
+                                            <p class="address-top__desc">Where should we deliver your order?</p>
+                                        </div>
+                                        <div class="address-top__right">
+                                            <button
+                                                class="btn btn-primary address-top__btn js-toggle"
+                                                toggle-target="#modal-address"
+                                            >
+                                                <img src="./assets.css/icon/plus.svg" alt="" />
+                                                Add a new address
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- <p class="address-message">
+                                        Not address yet.
+                                        <a class="address-message__link js-toggle" toggle-target="#modal-address" href="#!"> Add a new address</a>
+                                    </p> -->
+                                    <div class="address-list">
+                                        <article class="address-item">
+                                            <div class="address-item__left">
+                                                <label>
+                                                    <input type="checkbox" class="address-item__check" />
+                                                </label>
+
+                                                <div class="">
+                                                    <p class="address-item__name address-top__title">Imran Khan</p>
+                                                    <p class="address-item__address address-top__desc">
+                                                        Museum of Rajas, Sylhet Sadar, Sylhet 3100.
+                                                    </p>
+                                                    <ul class="address-item__bottom">
+                                                        <li class="address-item__bottom-text">Shipping</li>
+                                                        <li class="address-item__bottom-text">Delivery from store</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="address-item__right">
+                                                <button
+                                                    class="address-item__right-btn js-toggle"
+                                                    toggle-target="#modal-address"
+                                                >
+                                                    <img
+                                                        class="icon"
+                                                        src="./assets.css/icon/addresss-icon.svg"
+                                                        alt=""
+                                                    />
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
+                                        </article>
+
+                                        <article class="address-item">
+                                            <div class="address-item__left">
+                                                <label>
+                                                    <input type="checkbox" class="address-item__check" />
+                                                </label>
+
+                                                <div class="">
+                                                    <p class="address-item__name address-top__title">Imran Khan</p>
+                                                    <p class="address-item__address address-top__desc">
+                                                        Al Hamra City (10th Floor), Hazrat Shahjalal Road, Sylhet,
+                                                        Sylhet, Bangladesh
+                                                    </p>
+                                                    <ul class="address-item__bottom">
+                                                        <li class="address-item__bottom-text">Shipping</li>
+                                                        <li class="address-item__bottom-text">Delivery from store</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="address-item__right">
+                                                <button
+                                                    class="address-item__right-btn js-toggle"
+                                                    toggle-target="#modal-address"
+                                                >
+                                                    <img
+                                                        class="icon"
+                                                        src="./assets.css/icon/addresss-icon.svg"
+                                                        alt=""
+                                                    />
+                                                    <span>Edit</span>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="checkout-info__separate"></div>
+
                                 <div class="checkout-info__list">
                                     <article class="checkout-item">
                                         <a href="./product-detail.html"
@@ -251,7 +352,7 @@
                                             src="./assets.css/icon/arow-down.svg"
                                             alt=""
                                         />
-                                        <a href="./index.html" class="checkout-info__link">Continue Shopping</a>
+                                        <a href="./checkout.html" class="checkout-info__link">Continue Shopping</a>
                                     </div>
 
                                     <div class="checkout-info__bottom-right">
@@ -302,9 +403,7 @@
                                             <span>$201.65</span>
                                         </div>
 
-                                        <a href="./shipping.html" class="btn btn-primary checkout-info__btn"
-                                            >Continue to checkout</a
-                                        >
+                                        <a href="#!" class="btn btn-primary checkout-info__btn">Continue to checkout</a>
                                     </div>
                                 </div>
 
@@ -340,5 +439,119 @@
         <script>
             load("#footer", "./template/footer.html");
         </script>
+
+        <!-- modal -->
+
+        <div class="modal hide" id="modal-address">
+            <div class="modal-container">
+                <div class="modal-container__row">
+                    <h2 class="modal-container__heading">Add new shipping address</h2>
+                </div>
+
+                <div class="modal-content">
+                    <form class="form" action="">
+                        <div class="form-group">
+                            <label for="name" class="form-lable">Name</label>
+                            <input
+                                type="text"
+                                class="form-input modal-address__input"
+                                placeholder="Name"
+                                name="name"
+                                id="name"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-lable">Phone</label>
+                            <input
+                                type="tel"
+                                class="form-input modal-address__input"
+                                placeholder="Phone"
+                                name="phone"
+                                id="phone"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city" class="form-lable">City/District/Town</label>
+                            <input
+                                type="text"
+                                class="form-input modal-address__input js-toggle"
+                                toggle-target="#city-dialog"
+                                placeholder="City/District/Town"
+                                name="city"
+                                id="city"
+                            />
+
+                            <div id="city-dialog" class="form-input__dialog hide">
+                                <div
+                                    class="form-input__close d-none d-sm-inline-block js-toggle"
+                                    toggle-target="#city-dialog"
+                                >
+                                    &times
+                                </div>
+                                <div class="form-input__search">
+                                    <input type="text" placeholder="Search" class="form-input__search-btn" />
+                                    <img
+                                        src="./assets.css/icon/search.svg"
+                                        alt=""
+                                        class="form-input__search-icon icon"
+                                    />
+                                </div>
+
+                                <ul class="form-input__dialog-list">
+                                    <li class="form-input__dialog-item">Ha Noi</li>
+                                    <li class="form-input__dialog-item form-input__dialog-item-active">Ho Chi Minh</li>
+                                    <li class="form-input__dialog-item">Da Nang</li>
+                                    <li class="form-input__dialog-item">Hai Phong</li>
+                                    <li class="form-input__dialog-item">Thai Binh</li>
+                                    <li class="form-input__dialog-item">Nghe An</li>
+                                    <li class="form-input__dialog-item">Ha Noi</li>
+                                    <li class="form-input__dialog-item">Ho Chi Minh</li>
+                                    <li class="form-input__dialog-item">Da Nang</li>
+                                    <li class="form-input__dialog-item">Hai Phong</li>
+                                    <li class="form-input__dialog-item">Thai Binh</li>
+                                    <li class="form-input__dialog-item">Nghe An</li>
+                                    <li class="form-input__dialog-item">Ha Noi</li>
+                                    <li class="form-input__dialog-item">Ho Chi Minh</li>
+                                    <li class="form-input__dialog-item">Da Nang</li>
+                                    <li class="form-input__dialog-item">Hai Phong</li>
+                                    <li class="form-input__dialog-item">Thai Binh</li>
+                                    <li class="form-input__dialog-item">Nghe An</li>
+                                    <li class="form-input__dialog-item">Nghe An</li>
+                                    <li class="form-input__dialog-item">Ha Noi</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" class="form-lable">Address</label>
+                            <textarea
+                                name="address"
+                                id="address"
+                                class="form-textarea modal-address__input"
+                                placeholder="Address"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group modal-address__form-group">
+                            <label>
+                                <input type="checkbox" class="form-input__check" />
+                                <span class="form-input__check-text">Set as default address</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-footer">
+                    <button class="btn btn-text filter-btn-text js-toggle" toggle-target="#modal-address">
+                        Cancel
+                    </button>
+                    <button class="btn btn-primary filter-btn js-toggle" toggle-target="#modal-address">Create</button>
+                </div>
+            </div>
+
+            <div class="modal-overlay"></div>
+        </div>
     </body>
 </html>

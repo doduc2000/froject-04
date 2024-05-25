@@ -35,15 +35,119 @@
         }
     }
 
-    &-input{
+    &-textarea, &-input{
         width: 100%;
         border: 1px solid #D2D1D6;
-        height: 50px;
         border-radius: 10px;
         padding: 12px 50px 12px 12px ;
 
         @include abstracts.screen(md){
             height: 48px;
+        }
+    }
+
+    &-lable{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--checkout-text-color); 
+    }
+
+    &-textarea{
+        height: 100px;
+        resize: none;
+    }
+
+    &-input{      
+        height: 50px;
+
+        &__close{
+            padding: 10px; 
+            font-size: 3rem;
+        }
+
+        &__dialog{
+            position: absolute;
+            bottom: 55px;
+            left: 10px;
+            background-color: var(--checkout-breadcrumb-bg-color);
+            padding: 0 0 10px 0;
+            border-radius: 10px;
+            border: 1px solid #D2D1D6;
+            max-height: 230px;
+            opacity: 0;
+            visibility: hidden;
+
+            @include abstracts.screen(sm){
+                position: fixed;
+                inset: 0;
+                max-height: initial;
+                border-radius: 0;
+                z-index: 1;
+            }
+
+            &.show{
+                opacity: 1;
+                visibility: visible;
+            }
+            
+
+            &-list{
+                overflow-y: auto;
+                max-height: 175px;
+
+                @include abstracts.screen(sm){
+                    max-height: 80%;
+                    
+                }
+            }
+
+            &-item{
+                font-size: 1.4rem;
+                padding: 10px;
+
+                &-active{
+                    background-color: #FFB700;
+                    font-weight: 500;
+                    color: #000;
+                }
+
+                &:not(&-active):hover{
+                    background-color: var(--form-dialog-item-bg-color);
+                }
+
+                @include abstracts.screen(sm){
+                    padding: 14px;
+
+                    &:first-child{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        &__search{
+            border-bottom: 1px solid #D2D1D6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include abstracts.screen(sm){
+                border: 1px solid #D2D1D6;
+                border-radius: 10px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            &-btn{
+                padding: 10px;
+                width: 100%;
+            }
+
+            &-icon{
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+            }
         }
     }
 

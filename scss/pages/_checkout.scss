@@ -21,6 +21,17 @@
             padding: 16px;
         }
 
+        &__heading{
+            font-weight: 700;
+            font-size: 2.4rem;
+            color: var(--checkout-text-color);
+            line-height: 1.6;
+
+            @include abstracts.screen(sm){
+                font-weight: 500;
+                font-size: 1.6rem;
+            }
+        }
 
         & + & {
             margin-top: 30px;
@@ -104,6 +115,13 @@
 
         &__btn{
             margin-top: 30px;
+            color: #1A162E;
+            font-size: 2.2rem;
+            font-weight: 500;
+
+            @include abstracts.screen(sm){
+                font-size: 1.6rem;
+            }
         }
     }
 
@@ -139,8 +157,8 @@
             }
 
             @include abstracts.screen(sm){
-                width: 60px;
-                height: 60px;
+                width: 100%;
+                height: 100%;
             }
         }
 
@@ -318,4 +336,118 @@
     }
 
     
+}
+
+.address{
+    &-message{
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-top: 30px;
+
+        &__link{
+            color: #0071DC;
+        }
+    }
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+
+        @include abstracts.screen(md){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        &__title, &__desc{
+            color: var(--checkout-text-color);
+            line-height: 1.5;
+        }
+
+        &__title, &__btn{
+            font-size: 1.8rem;
+            font-weight: 500;
+
+            @include abstracts.screen(sm){
+                font-size: 1.6rem;
+            }
+        }
+
+        &__desc{
+            font-size: 1.5rem;
+        }
+
+        &__btn{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 22px;
+            border-radius: 30px;
+            color: #1A162E;
+        }
+    }
+
+    &-list{
+        margin-top: 30px;
+    }
+
+    &-item{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @include abstracts.screen(md){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        &__left{
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        &__address{
+            @include abstracts.screen(lg){
+                width: min(570px, 90%);
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            gap: 30px;
+            list-style: disc inside;
+
+            &-text{
+                font-size: 1.4rem;
+                color: var(--checkout-text-color);
+            }
+        }
+
+        &__check{
+            appearance: none;
+
+            &::before{
+                content: url("../icon/uncheck.svg");
+            }
+
+            &:not(:checked)::before{
+                filter: var(--icon-color);
+            }
+
+            &:checked::before{
+                content: url("../icon/check.svg");
+            }
+        }
+
+        &__right-btn{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
 }
