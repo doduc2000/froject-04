@@ -1,0 +1,103 @@
+@use "../abstracts";
+
+.favorite{
+
+   
+
+    &-heading, &-desc{
+        color: var(--checkout-text-color);
+        line-height: 1.5;
+    }
+
+    &-heading{
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    &-desc{
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+
+    &-item{
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+
+        @include abstracts.screen(lg){
+            flex-direction: column;
+        }
+
+        &__right{
+           flex: 1;
+           justify-content: space-between;
+
+            @include abstracts.screen(lg){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &-content{
+                display: flex;
+                align-items: center;
+
+                @include abstracts.screen(sm){
+                    align-items: flex-start;
+                }
+                    
+                
+            }
+        }
+
+        &__img{
+            @include abstracts.screen(sm){
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        &__heading{
+            width: 100%;
+
+            @include abstracts.screen(xl){
+            width: 374px;
+            }
+
+            @include abstracts.screen(md){
+                width: 100%;
+            }
+        }
+
+        &__price-strong{
+
+            @include abstracts.screen(lg){
+                display: none;
+            }
+        }
+
+        &__price-wrap{
+            @include abstracts.screen(lg){
+                margin-top: 50px;
+                align-items: flex-end;
+                width: 100%;
+            }
+
+            @include abstracts.screen(sm){
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &-btn{
+       height: 50px;
+        padding: 18px 40px;
+        font-weight: 500;
+        font-size: 2.2rem;
+        border-radius: 99px;
+
+        @include abstracts.screen(sm){
+            font-size: 1.6rem;
+        }
+    }
+}
