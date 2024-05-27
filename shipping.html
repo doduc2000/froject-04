@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,13 +44,13 @@
                     <!-- breadcrumbs -->
                     <ul class="breadcrumbs checkout-breadcrumb">
                         <li>
-                            <a href="#!" class="breadcrumbs-item"
+                            <a href="./index.html" class="breadcrumbs-item"
                                 >Home
                                 <img src="./assets.css/icon/arow-right.svg" alt="" class="beradcrumbs-icon" />
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="breadcrumbs-item"
+                            <a href="./checkout.html" class="breadcrumbs-item"
                                 >Checkout
                                 <img src="./assets.css/icon/arow-right.svg" alt="" class="beradcrumbs-icon" />
                             </a>
@@ -110,7 +110,7 @@
                                             </div>
                                             <div class="address-item__right">
                                                 <button
-                                                    class="address-item__right-btn js-toggle"
+                                                    class="checkout-info__item-btn js-toggle"
                                                     toggle-target="#modal-address"
                                                 >
                                                     <img
@@ -143,7 +143,7 @@
                                             </div>
                                             <div class="address-item__right">
                                                 <button
-                                                    class="address-item__right-btn js-toggle"
+                                                    class="checkout-info__item-btn js-toggle"
                                                     toggle-target="#modal-address"
                                                 >
                                                     <img
@@ -403,7 +403,9 @@
                                             <span>$201.65</span>
                                         </div>
 
-                                        <a href="#!" class="btn btn-primary checkout-info__btn">Continue to checkout</a>
+                                        <a href="./payment.html" class="btn btn-primary checkout-info__btn"
+                                            >Continue to checkout</a
+                                        >
                                     </div>
                                 </div>
 
@@ -481,6 +483,7 @@
                                 placeholder="City/District/Town"
                                 name="city"
                                 id="city"
+                                readonly
                             />
 
                             <div id="city-dialog" class="form-input__dialog hide">

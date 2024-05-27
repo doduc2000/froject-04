@@ -123,6 +123,12 @@
                 font-size: 1.6rem;
             }
         }
+
+        &__item-btn{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+        }
     }
 
     &-item{
@@ -444,10 +450,147 @@
             }
         }
 
-        &__right-btn{
-            display: flex;
-            align-items: center;
-            gap: 10px;
+    }
+}
+
+
+
+.payment{
+
+    &-row, &-row__top{
+        display: flex;
+        align-items: center;
+    }
+
+    &-row__top{
+        @include abstracts.screen(lg){
+            gap: 20px;
         }
     }
+
+    &-row{
+        margin-top: 30px;
+        background-color: var(--payment-row-bg-color);
+        border-radius: 20px;
+        padding: 20px;
+
+        @include abstracts.screen(sm){
+           
+        }
+
+        &__right{
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+
+            @include abstracts.screen(sm){
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+        }
+
+
+       
+        &__view{
+            
+            padding: 8px;
+            margin-left: auto;
+
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+
+        }
+
+       
+    }
+
+    &-heading{
+        font-size: 2.2rem;
+        margin-right: auto;
+    }
+
+    &-title, &-desc, &-row__view{
+        color: var(--checkout-text-color);
+        line-height: 1.5;
+    }
+
+    &-title{
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-bottom: 4px;
+    }
+
+    &-desc{
+        font-size: 1.5rem;
+    }
+
+    &-img{
+        width: 70px;
+        height: 54px; 
+        margin-right: 20px;
+    }
+
+    &-lable{
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        flex-direction: row-reverse;
+    }
+
+    &-btn__text{
+        margin-top: -4px;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #9E9DA8;
+    }
+
+    &-input{
+        appearance: none;
+
+        &::after{
+            content: url("../icon/uncheck.svg");
+        }
+
+        &:checked::after{
+            content: url("../icon/check.svg");
+        }
+
+        &:checked +.payment-btn__text{
+            color: var(--payment-btn-text-color);
+        }
+
+        &:not(:checked)::after {
+            filter: var(--icon-color);
+        }
+    }
+
+    &-form{
+        margin-top: 30px;
+
+        @include abstracts.screen(lg){
+           width: 460px;
+        }
+
+        &__lable{
+            display: block;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        &__group{
+            margin-top: 0 !important;
+        }
+
+        &__input{
+            @include abstracts.screen(lg){
+                width: 65%;
+                padding: 12px;
+            }
+        }
+    }
+
+   
 }

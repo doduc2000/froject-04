@@ -48,7 +48,8 @@ html.dark {
   --checkout-breadcrumb-shadow-color: rgba(23, 28, 40, 0.2);
   --checkout-text-color: #B9BABE;
   --form-dialog-item-bg-color: #292E39;
-  --form-dialog-item-hover-color: ;
+  --payment-row-bg-color: #292E39;
+  --payment-btn-text-color: #B9BABE;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -110,7 +111,8 @@ html.dark {
   --checkout-breadcrumb-shadow-color: rgba(237, 237, 246, 0.2);
   --checkout-text-color: #1A162E;
   --form-dialog-item-bg-color: #eee;
-  --form-dialog-item-hover-color: ;
+  --payment-row-bg-color: #F6F6F6;
+  --payment-btn-text-color: #1A162E;
 }
 @media (max-width: 575.98px) {
   :root {
