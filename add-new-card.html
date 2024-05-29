@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add new card | Grocerymart</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets.css/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets.css/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets.css/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets.css/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets.css/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets.css/fonts/stylesheet.css" />
+
+        <!-- reset -->
+        <link rel="stylesheet" href="./assets.css/css/main.css" />
+
+        <!-- scripts -->
+        <script src="./assets.css/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <!-- main -->
+        <main class="profile">
+            <div class="container">
+                <div class="profile-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name="" id="" class="search-bar__input" placeholder="Search for item" />
+                        <button type="submit" class="search-bar__button">
+                            <img src="./assets.css/icon/search.svg" alt="" class="search-bar__icon icon" />
+                        </button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                            <div class="profile-sidebar">
+                                <div class="profile-user">
+                                    <img
+                                        src="./assets.css/img/avatar/avatar-header.jpg"
+                                        alt=""
+                                        class="profile-user__avatar"
+                                    />
+                                    <h1 class="profile-user__name">Imran Khan</h1>
+                                    <p class="profile-user__desc">Registered: 17th May 2022</p>
+                                </div>
+
+                                <div class="profile-sidebar__list">
+                                    <div class="profile-sidebar__item">
+                                        <h3 class="profile-sidebar__heading">Manage Account</h3>
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/people.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Personal info</p>
+                                        </a>
+
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/address-frofile.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Addresses</p>
+                                        </a>
+
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/mail.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Communications & privacy</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="profile-sidebar__item">
+                                        <h3 class="profile-sidebar__heading">My items</h3>
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/save.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Reorder</p>
+                                        </a>
+
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/heart.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Lists</p>
+                                        </a>
+
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/gilf-profile.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Registries</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="profile-sidebar__item">
+                                        <h3 class="profile-sidebar__heading">Subscriptions & plans</h3>
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/protection.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Protection plans</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="profile-sidebar__item">
+                                        <h3 class="profile-sidebar__heading">Customer Service</h3>
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/help.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Help</p>
+                                        </a>
+
+                                        <a class="profile-sidebar__row" href="#!">
+                                            <div class="profile-sidebar__icon-wrap">
+                                                <img
+                                                    class="icon"
+                                                    src="./assets.css/icon/terms-of-use.svg"
+                                                    alt=""
+                                                    class="profile-sidebar__icon"
+                                                />
+                                            </div>
+                                            <p class="profile-sidebar__desc">Terms of Use</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                            <div class="checkout-info">
+                                <h2 class="checkout-info__heading">Add credit or debit card</h2>
+
+                                <form action="" class="form addcart-form">
+                                    <div class="form-row addcart-form__row">
+                                        <div class="addcart-form__group">
+                                            <label for="fist-name" class="form-lable addcart-form__lable"
+                                                >First Name</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-input"
+                                                placeholder="Imran"
+                                                name=""
+                                                id="fist-name"
+                                            />
+                                        </div>
+
+                                        <div class="addcart-form__group">
+                                            <label for="last-name" class="form-lable addcart-form__lable"
+                                                >Last Name</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-input"
+                                                placeholder="Khan"
+                                                name=""
+                                                id="last-name"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row addcart-form__row">
+                                        <div class="addcart-form__group">
+                                            <label for="card-number" class="form-lable addcart-form__lable"
+                                                >Card Information</label
+                                            >
+                                            <input
+                                                type="number"
+                                                class="form-input"
+                                                placeholder="Card Number"
+                                                name=""
+                                                id="card-number"
+                                            />
+                                        </div>
+
+                                        <div class="addcart-form__group">
+                                            <label for="date" class="form-lable addcart-form__lable"
+                                                >Expiration Date</label
+                                            >
+                                            <input
+                                                type="number"
+                                                class="form-input"
+                                                placeholder="MM/YY"
+                                                name=""
+                                                id="date"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row addcart-form__row">
+                                        <div class="addcart-form__group">
+                                            <label for="cvv" class="form-lable addcart-form__lable">CVV</label>
+                                            <input
+                                                type="number"
+                                                class="form-input"
+                                                placeholder="Imran"
+                                                name=""
+                                                id="cvv"
+                                            />
+                                        </div>
+
+                                        <div class="addcart-form__group">
+                                            <label for="phone" class="form-lable addcart-form__lable"
+                                                >Phone Number</label
+                                            >
+                                            <input type="tel" class="form-input" placeholder="017" name="" id="phone" />
+                                        </div>
+                                    </div>
+
+                                    <div class="addcart-form__bottom">
+                                        <p class="addcart-form__bottom-desc">Card Preferences</p>
+                                        <div class="addcart-form__bottom-input-wrap">
+                                            <label for="default-card" class="form-lable addcart-form__lable"
+                                                >Set as default card</label
+                                            >
+                                            <input
+                                                name=""
+                                                id="default-card"
+                                                type="checkbox"
+                                                class="addcart-form__check"
+                                            />
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="form-footer addcart-form__footer">
+                                    <a href="./profile.html" class="btn btn-text">Cancel</a>
+                                    <button class="btn btn-primary addcart-form__btn">Save Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

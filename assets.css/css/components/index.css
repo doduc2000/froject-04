@@ -684,12 +684,6 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.filter-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-}
 @media (max-width: 1199.98px) {
   .filter-footer {
     height: 53px;
@@ -880,6 +874,12 @@
     align-items: flex-start;
     gap: 0;
   }
+}
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
 .breadcrumbs {

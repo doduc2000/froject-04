@@ -437,11 +437,8 @@
         &__check{
             appearance: none;
 
-            &::before{
-                content: url("../icon/uncheck.svg");
-            }
-
             &:not(:checked)::before{
+                content: url("../icon/uncheck.svg");
                 filter: var(--icon-color);
             }
 

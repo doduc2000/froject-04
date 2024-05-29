@@ -1302,6 +1302,7 @@ html.dark {
   --payment-row-bg-color: #292E39;
   --payment-btn-text-color: #B9BABE;
   --account-item-bg-color: #292E39;
+  --form-input-check: ../icon/check.svg ;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -1366,6 +1367,7 @@ html.dark {
   --payment-row-bg-color: #F6F6F6;
   --payment-btn-text-color: #1A162E;
   --account-item-bg-color: #F6F6F6;
+  --form-input-check: ../icon/check-black.svg;
 }
 @media (max-width: 575.98px) {
   :root {
@@ -2605,12 +2607,6 @@ html.dark {
   top: 50%;
   transform: translateY(-50%);
 }
-.filter-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-}
 @media (max-width: 1199.98px) {
   .filter-footer {
     height: 53px;
@@ -2801,6 +2797,12 @@ html.dark {
     align-items: flex-start;
     gap: 0;
   }
+}
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
 .breadcrumbs {
@@ -3952,10 +3954,8 @@ html.dark {
 .address-item__check {
   appearance: none;
 }
-.address-item__check::before {
-  content: url("../icon/uncheck.svg");
-}
 .address-item__check:not(:checked)::before {
+  content: url("../icon/uncheck.svg");
   filter: var(--icon-color);
 }
 .address-item__check:checked::before {
@@ -4356,6 +4356,65 @@ html.dark {
 }
 .account-info__desc {
   font-size: 1.4rem;
+}
+
+.addcart-form {
+  width: 100%;
+  margin: 30px 0;
+}
+.addcart-form__row {
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.addcart-form__group {
+  flex: 1;
+}
+@media (max-width: 991.98px) {
+  .addcart-form__group {
+    width: 100%;
+  }
+}
+.addcart-form__lable, .addcart-form__bottom-desc {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.addcart-form__lable {
+  display: block;
+  margin-bottom: 20px;
+}
+.addcart-form__bottom-desc {
+  line-height: 1.6;
+}
+.addcart-form__bottom-input-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 10px;
+}
+.addcart-form__bottom-input-wrap .addcart-form__lable {
+  margin-bottom: 0;
+}
+.addcart-form__check {
+  appearance: none;
+}
+.addcart-form__check:checked::after {
+  content: url("../icon/check-black.svg");
+}
+.addcart-form__check:not(:checked)::after {
+  content: url("../icon/uncheck.svg");
+  filter: var(--icon-color);
+}
+.addcart-form__footer {
+  gap: 30px;
+}
+.addcart-form__btn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 99px;
 }
 
 /*# sourceMappingURL=main.css.map */

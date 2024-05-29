@@ -227,3 +227,80 @@
 
 
 }
+
+.addcart{
+
+    &-form{
+        width: 100%;
+        margin: 30px 0;
+
+        &__row{
+            width: 100%;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__group{
+            flex: 1;
+
+            @include abstracts.screen(lg){
+                width: 100%;
+            }
+        }
+
+        &__lable, &__bottom-desc{    
+            font-size: 1.8rem;
+            font-weight: 500;
+            
+        }
+
+        &__lable{
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        &__bottom-desc{
+            line-height: 1.6;
+        }
+
+        &__bottom-input-wrap{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin-top: 10px;
+            gap: 10px;
+
+            & .addcart-form__lable{
+                margin-bottom: 0;
+            }
+        }
+
+        &__check{
+            appearance: none;
+
+            &:checked::after{
+                content: url("../icon/check-black.svg");
+            }
+
+            &:not(:checked)::after{
+                content: url("../icon/uncheck.svg");
+                filter: var(--icon-color);
+            }
+
+
+        }
+
+        &__footer{
+            gap: 30px;
+        }
+
+        &__btn{
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 99px;
+        }
+    }
+
+}
