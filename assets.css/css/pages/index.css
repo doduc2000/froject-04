@@ -965,7 +965,10 @@
 }
 .favorite-desc {
   font-size: 1.5rem;
-  margin-bottom: 50px;
+}
+.favorite-check {
+  display: block;
+  margin: 30px 0;
 }
 .favorite-item {
   align-items: flex-start;
@@ -1033,6 +1036,7 @@
   }
 }
 .favorite-btn {
+  color: #1A162E;
   height: 50px;
   padding: 18px 40px;
   font-weight: 500;
@@ -1043,6 +1047,201 @@
   .favorite-btn {
     font-size: 1.6rem;
   }
+}
+@media (max-width: 767.98px) {
+  .favorite-info__bottom {
+    display: flex;
+    padding: 30px 0;
+    border-top: 1px solid #D2D1D6;
+    justify-content: flex-end;
+  }
+}
+
+.profile-container {
+  margin: 30px 0;
+}
+.profile-sidebar {
+  overflow: hidden;
+  background-color: var(--checkout-breadcrumb-bg-color);
+  border-radius: 20px;
+  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+}
+@media (max-width: 767.98px) {
+  .profile-sidebar {
+    margin: 20px 0;
+  }
+}
+.profile-sidebar__list {
+  padding: 30px;
+}
+.profile-sidebar__item:not(:first-child) {
+  margin-top: 30px;
+}
+.profile-sidebar__heading, .profile-sidebar__desc {
+  color: var(--checkout-text-color);
+}
+.profile-sidebar__heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 11px;
+}
+.profile-sidebar__desc {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.profile-sidebar__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  height: 42px;
+}
+.profile-sidebar__icon-wrap {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-favorite__list {
+  margin-top: 14px;
+}
+.profile-favorite__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.profile-favorite__list-img {
+  width: 151px;
+  height: 108px;
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .profile-favorite__list-img {
+    width: 110px;
+    height: 79px;
+  }
+}
+.profile-favorite__list-heading, .profile-favorite__list-price {
+  color: var(--checkout-text-color);
+  line-height: 1.5;
+  font-weight: 500;
+}
+.profile-favorite__list-heading {
+  font-size: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .profile-favorite__list-heading {
+    font-size: 1.4rem;
+  }
+}
+.profile-favorite__list-price {
+  font-size: 2.2rem;
+}
+@media (max-width: 767.98px) {
+  .profile-favorite__list-price {
+    font-size: 1.8rem;
+  }
+}
+.profile-favorite__list-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+@media (max-width: 991.98px) {
+  .profile-favorite__list-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+.profile-favorite__list-btn {
+  padding: 10px 20px;
+  border-radius: 99px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .profile-favorite__list-btn {
+    font-size: 1.4rem;
+  }
+}
+.profile-favorite__separate {
+  height: 1px;
+  background-color: #D2D1D6;
+  margin: 20px 0;
+}
+.profile-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1A162E 100%), url("../img/avatar/profile-cover-img.jpeg") no-repeat center/cover;
+}
+.profile-user__avatar {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  border: 5px solid rgba(223, 210, 250, 0.2);
+  box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
+  margin: 40px 0 20px 0;
+  background-color: #DFD2FA;
+}
+.profile-user__name, .profile-user__desc {
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+.profile-user__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.profile-user__desc {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.account-info {
+  background-color: var(--account-item-bg-color);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.account-info__link {
+  display: block;
+}
+.account-info__link + .account-info__link {
+  margin-top: 20px;
+}
+@media (max-width: 575.98px) {
+  .account-info__link + .account-info__link {
+    margin-top: 15px;
+  }
+}
+.account-info__icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  background-color: var(--checkout-breadcrumb-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.account-info__title, .account-info__desc {
+  color: var(--checkout-text-color);
+  line-height: 1.5;
+}
+.account-info__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+.account-info__desc {
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=index.css.map */

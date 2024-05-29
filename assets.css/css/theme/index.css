@@ -50,6 +50,7 @@ html.dark {
   --form-dialog-item-bg-color: #292E39;
   --payment-row-bg-color: #292E39;
   --payment-btn-text-color: #B9BABE;
+  --account-item-bg-color: #292E39;
 }
 @media (max-width: 575.98px) {
   html.dark {
@@ -113,6 +114,7 @@ html.dark {
   --form-dialog-item-bg-color: #eee;
   --payment-row-bg-color: #F6F6F6;
   --payment-btn-text-color: #1A162E;
+  --account-item-bg-color: #F6F6F6;
 }
 @media (max-width: 575.98px) {
   :root {
