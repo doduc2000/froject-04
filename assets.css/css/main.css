@@ -1365,6 +1365,7 @@ html.dark {
   --form-dialog-item-bg-color: #eee;
   --payment-row-bg-color: #F6F6F6;
   --payment-btn-text-color: #1A162E;
+  --account-item-bg-color: #F6F6F6;
 }
 @media (max-width: 575.98px) {
   :root {
