@@ -51,7 +51,6 @@ html.dark {
   --payment-row-bg-color: #292E39;
   --payment-btn-text-color: #B9BABE;
   --account-item-bg-color: #292E39;
-  --form-input-check: ../icon/check.svg ;
 }
 @media (max-width: 575.98px) {
   html.dark {
