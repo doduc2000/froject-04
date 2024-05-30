@@ -81,10 +81,19 @@
         }
 
         &__btn:first-child{
-            padding: 13px;
-           
+            padding: 13px;     
         }
 
+        &__btn-wrap:hover .act-dropdown, &__user:hover .act-dropdown{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &__avatar:hover .user-dropdown{
+            opacity: 1;
+            visibility: visible;
+        }
+        
         &__title{
             font-size: 1.5rem;
             font-weight: 500;
@@ -102,6 +111,7 @@
             height: 50px;
             border-radius: 8px;
             object-fit: cover;
+
         }
 
         &__skeleton{
@@ -270,13 +280,15 @@
 }
 
 .act-dropdown{
-    position: absolute;
-    right: 0;
-    top: 110px;
-    background-color: var(--atc-dropdown-bg-color);
-    border-radius: 20px;
-    box-shadow: 0 40px 90px 20px var(--atc-dropdown-shadow-color);
-    transition: all 0.5s;
+        position: absolute;
+        right: 0;
+        top: 110px;
+        background-color: var(--atc-dropdown-bg-color);
+        border-radius: 20px;
+        box-shadow: 0 40px 90px 20px var(--atc-dropdown-shadow-color);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.7s;
 
     &__favorite{
         top: 71px;
@@ -288,11 +300,6 @@
         width: 100%;
         height: 1px;
         background-color: var(--atc-dropdown-border-bottom-color);
-    }
-
-    &.hide{
-        opacity: 0;
-        visibility: hidden;
     }
     
     &__inner{
@@ -421,5 +428,54 @@
             width: 275px;
             border-radius: 999px !important;
         } 
+    }
+}
+
+.user{
+    &-arrow{
+        position: absolute;
+        top: -15px;
+        right: 18px;
+    }
+
+
+    &-avatar{
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    &-inner{
+        width: 220px;
+    }
+
+    &-name, &-item{
+        color: var(--text-color);
+    }
+
+    &-name{
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        
+    }
+
+    &-menu{
+        padding: 8px 0;
+        border-top: 1px solid #d2d1d6;
+        border-bottom: 1px solid #d2d1d6;
+    }
+
+    &-icon{
+        width: 16px;
+        height: 16px;
+    }
+
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
     }
 }

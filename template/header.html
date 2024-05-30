@@ -9,7 +9,7 @@
         <!-- logo -->
 
         <div>
-            <a class="logo header-logo" href="./">
+            <a class="logo header-logo" href="./index-logined.html">
                 <img src="./assets.css/icon/logo.svg" alt="" class="logo-img header-logo__img" />
                 <h2 class="logo-title header-logo__title">grocerymart</h2></a
             >
@@ -4225,13 +4225,13 @@
             </div>
 
             <div class="header-action__group">
-                <div class="">
-                    <button class="header-action__btn js-toggle" toggle-target="#act-dropdown__favorite">
+                <div class="header-action__btn-wrap">
+                    <button class="header-action__btn">
                         <img src="./assets.css/icon/heart.svg" alt="" class="header-icon icon" />
                         <span class="header-action__title">03</span>
 
                         <!-- act-dropdown -->
-                        <div id="act-dropdown__favorite" class="act-dropdown act-dropdown__favorite hide">
+                        <div class="act-dropdown act-dropdown__favorite">
                             <div class="act-dropdown__inner">
                                 <img
                                     src="../assets.css/icon/dropdrow-arrow.svg"
@@ -4307,7 +4307,7 @@
 
                 <div class="header-action__skeleton"></div>
 
-                <div class="">
+                <div class="header-action__btn-wrap">
                     <button class="header-action__btn js-toggle" toggle-target="#act-dropdown">
                         <img src="./assets.css/icon/buy.svg" alt="" class="header-icon icon" />
                         <span class="header-action__title">$65.42</span>
@@ -4402,9 +4402,34 @@
             </div>
 
             <div class="header-action__user">
-                <a href="./index-logined.html">
-                    <img src="./assets.css/img/avatar/avatar-header.jpg" alt="" class="header-action__avatar"
-                /></a>
+                <img src="./assets.css/img/avatar/avatar-header.jpg" alt="" class="header-action__avatar" />
+
+                <!-- act-dropdown -->
+                <div class="act-dropdown usre-dropdown hide">
+                    <div class="act-dropdown__inner user-inner">
+                        <img src="../assets.css/icon/dropdrow-arrow.svg" alt="" class="user-arrow" />
+                        <div class="act-dropdown__top">
+                            <img src="./assets.css/img/avatar/avatar-header.jpg" alt="" class="user-avatar" />
+                            <div class="">
+                                <p class="user-name">Iran Khan</p>
+                                <p>@Irankhan</p>
+                            </div>
+                        </div>
+
+                        <div class="user-menu">
+                            <a href="./profile.html" class="user-item">Profile</a>
+                            <a class="user-item"> Setting </a>
+                            <p class="user-item" id="switch-theme-btn">
+                                <span>Dark mode</span>
+                                <img class="user-icon icon" src="./assets.css/icon/setting.svg" alt="" />
+                            </p>
+                        </div>
+
+                        <div class="user-bottom">
+                            <a class="user-item" href="./index.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
